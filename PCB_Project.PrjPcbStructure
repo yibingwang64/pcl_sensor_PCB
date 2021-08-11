@@ -1,7 +1,1 @@
-Record=TopLevelDocument|FileName=[1]MCU.SchDoc|SheetNumber= 
-Record=NoMainPathDocument|SourceDocument=[1]MCU.SchDoc|FileName=[2]Battery.SchDoc|SheetNumber= 
-Record=NoMainPathDocument|SourceDocument=[1]MCU.SchDoc|FileName=[3]USB.SchDoc|SheetNumber= 
-Record=NoMainPathDocument|SourceDocument=[1]MCU.SchDoc|FileName=[4]Button.SchDoc|SheetNumber= 
-Record=NoMainPathDocument|SourceDocument=[1]MCU.SchDoc|FileName=[5] Sensors.SchDoc|SheetNumber= 
-Record=NoMainPathDocument|SourceDocument=[1]MCU.SchDoc|FileName=[6]3-axis-accelerometer.SchDoc|SheetNumber= 
-Record=NoMainPathDocument|SourceDocument=[1]MCU.SchDoc|FileName=[7]Halleffec.SchDoc|SheetNumber= 
+Record=TopLevelDocument|FileName=[1]MCU.SchDoc
