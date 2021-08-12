@@ -41,6 +41,40 @@ PrefsVaultGUID=
 PrefsRevisionGUID=
 
 [Document1]
+DocumentPath=PCB_Project1\PCB_Project.SCHLIB
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=LEYAUIPQ
+
+[Document2]
+DocumentPath=PCB_Project1\PCB_PROJECT.PcbLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=XWNDRCTY
+
+[Document3]
 DocumentPath=Schlib_For_High_Voltage_Sensor.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -57,7 +91,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=SKJZTBBT
 
-[Document2]
+[Document4]
 DocumentPath=PcbLibForHigh_Voltage_Sensor.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -74,7 +108,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=IQDHLDWG
 
-[Document3]
+[Document5]
 DocumentPath=[1]MCU.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -91,7 +125,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=TIKADFCE
 
-[Document4]
+[Document6]
 DocumentPath=[2]Battery.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -108,7 +142,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=GOMNAPEK
 
-[Document5]
+[Document7]
 DocumentPath=[3]USB.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -125,7 +159,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=MPNXSMXW
 
-[Document6]
+[Document8]
 DocumentPath=[4]Button.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -142,7 +176,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=GFAAYDMJ
 
-[Document7]
+[Document9]
 DocumentPath=[5] Sensors.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -159,7 +193,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=MEVZNRXD
 
-[Document8]
+[Document10]
 DocumentPath=PCB_PROJECT.PcbDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -176,7 +210,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=VQLSMMOE
 
-[Document9]
+[Document11]
 DocumentPath=[6]3-axis-accelerometer.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -193,7 +227,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=IESSGSVT
 
-[Document10]
+[Document12]
 DocumentPath=[7]Halleffec.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -209,6 +243,23 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=SRREAZGK
+
+[Document13]
+DocumentPath=PCB_Project.IntLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=
 
 [ProjectVariant1]
 UniqueID=C9E8FD60-C759-4CB2-8099-C2133B6497A4
