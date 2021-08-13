@@ -1,0 +1,728 @@
+*************************************************************
+FileName = PCB_PROJECT.GBR
+AutoAperture = True
+*************************************************************
+Generating : Dielectric 2
+      File : PCB_PROJECT.3
+
+    Adding Layer      : Dielectric 2
+
+
+Used DCodes :
+*************************************************************
+
+*************************************************************
+Generating : Dielectric 3
+      File : PCB_PROJECT.2
+
+    Adding Layer      : Dielectric 3
+
+
+Used DCodes :
+*************************************************************
+
+*************************************************************
+Generating : Dielectric 1
+      File : PCB_PROJECT.1
+
+    Adding Layer      : Dielectric 1
+
+
+Used DCodes :
+*************************************************************
+
+*************************************************************
+Generating : Multi-Layer
+      File : PCB_PROJECT.GML
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D98
+    D99
+    D100
+    D101
+    D102
+    D103
+    D104
+    D105
+    D106
+*************************************************************
+
+*************************************************************
+Generating : Bottom Component Center
+      File : PCB_PROJECT.GM24
+
+    Adding Layer      : Bottom Component Center
+
+
+Used DCodes :
+*************************************************************
+
+*************************************************************
+Generating : Bottom 3D Body
+      File : PCB_PROJECT.GM23
+
+    Adding Layer      : Bottom 3D Body
+
+
+Used DCodes :
+*************************************************************
+
+*************************************************************
+Generating : Bottom Assembly
+      File : PCB_PROJECT.GM20
+
+    Adding Layer      : Bottom Assembly
+
+
+Used DCodes :
+*************************************************************
+
+*************************************************************
+Generating : Bottom Designator
+      File : PCB_PROJECT.GM9
+
+    Adding Layer      : Bottom Designator
+
+
+Used DCodes :
+*************************************************************
+
+*************************************************************
+Generating : Mechanical 6
+      File : PCB_PROJECT.GM6
+
+    Adding Layer      : Mechanical 6
+
+
+Used DCodes :
+*************************************************************
+
+*************************************************************
+Generating : Mechanical 29
+      File : PCB_PROJECT.GM29
+
+    Adding Layer      : Mechanical 29
+
+
+Used DCodes :
+    D13
+    D14
+    D15
+*************************************************************
+
+*************************************************************
+Generating : Mechanical 22
+      File : PCB_PROJECT.GM22
+
+    Adding Layer      : Mechanical 22
+
+
+Used DCodes :
+    D17
+*************************************************************
+
+*************************************************************
+Generating : Bottom Courtyard
+      File : PCB_PROJECT.GM21
+
+    Adding Layer      : Bottom Courtyard
+
+
+Used DCodes :
+    D12
+*************************************************************
+
+*************************************************************
+Generating : Top Designator
+      File : PCB_PROJECT.GM19
+
+    Adding Layer      : Top Designator
+
+
+Used DCodes :
+*************************************************************
+
+*************************************************************
+Generating : Mechanical 16
+      File : PCB_PROJECT.GM16
+
+    Adding Layer      : Mechanical 16
+
+
+Used DCodes :
+    D12
+    D15
+    D119
+*************************************************************
+
+*************************************************************
+Generating : Mechanical 15
+      File : PCB_PROJECT.GM15
+
+    Adding Layer      : Mechanical 15
+
+
+Used DCodes :
+    D14
+    D15
+    D18
+    D122
+    D123
+*************************************************************
+
+*************************************************************
+Generating : Mechanical 13
+      File : PCB_PROJECT.GM13
+
+    Adding Layer      : Mechanical 13
+
+
+Used DCodes :
+    D13
+    D14
+    D15
+    D18
+*************************************************************
+
+*************************************************************
+Generating : Top Value
+      File : PCB_PROJECT.GM12
+
+    Adding Layer      : Top Value
+
+
+Used DCodes :
+    D18
+*************************************************************
+
+*************************************************************
+Generating : Bottom Value
+      File : PCB_PROJECT.GM11
+
+    Adding Layer      : Bottom Value
+
+
+Used DCodes :
+    D18
+*************************************************************
+
+*************************************************************
+Generating : Dimensions
+      File : PCB_PROJECT.GM10
+
+    Adding Layer      : Dimensions
+
+
+Used DCodes :
+*************************************************************
+
+*************************************************************
+Generating : Mechanical 8
+      File : PCB_PROJECT.GM8
+
+    Adding Layer      : Mechanical 8
+
+
+Used DCodes :
+    D12
+    D18
+*************************************************************
+
+*************************************************************
+Generating : Top Component Center
+      File : PCB_PROJECT.GM7
+
+    Adding Layer      : Top Component Center
+
+
+Used DCodes :
+    D18
+*************************************************************
+
+*************************************************************
+Generating : Top Assembly
+      File : PCB_PROJECT.GM5
+
+    Adding Layer      : Top Assembly
+
+
+Used DCodes :
+    D13
+    D14
+    D15
+    D17
+*************************************************************
+
+*************************************************************
+Generating : Mechanical 4
+      File : PCB_PROJECT.GM4
+
+    Adding Layer      : Mechanical 4
+
+
+Used DCodes :
+    D18
+*************************************************************
+
+*************************************************************
+Generating : Top Courtyard
+      File : PCB_PROJECT.GM3
+
+    Adding Layer      : Top Courtyard
+
+
+Used DCodes :
+    D18
+    D120
+    D122
+*************************************************************
+
+*************************************************************
+Generating : Top 3D Body
+      File : PCB_PROJECT.GM2
+
+    Adding Layer      : Top 3D Body
+
+
+Used DCodes :
+*************************************************************
+
+*************************************************************
+Generating : Mechancial 1
+      File : PCB_PROJECT.GM1
+
+    Adding Layer      : Mechancial 1
+
+
+Used DCodes :
+    D15
+    D16
+    D18
+    D119
+    D120
+    D121
+*************************************************************
+
+*************************************************************
+Generating : Keep-Out Layer
+      File : PCB_PROJECT.GKO
+
+    Adding Layer      : Keep-Out Layer
+
+
+Used DCodes :
+    D124
+*************************************************************
+
+*************************************************************
+Generating : Bottom Paste
+      File : PCB_PROJECT.GBP
+
+    Adding Layer      : Bottom Paste
+
+    Adding Layer      : BOTTOM
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+*************************************************************
+
+*************************************************************
+Generating : Bottom Overlay
+      File : PCB_PROJECT.GBO
+
+    Adding Layer      : Bottom Overlay
+
+
+Used DCodes :
+    D13
+    D14
+    D18
+    D19
+*************************************************************
+
+*************************************************************
+Generating : Bottom Solder
+      File : PCB_PROJECT.GBS
+
+    Adding Layer      : Bottom Solder
+
+    Adding Layer      : BOTTOM
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D87
+    D88
+    D89
+    D90
+    D91
+    D92
+    D93
+    D94
+    D95
+    D96
+*************************************************************
+
+*************************************************************
+Generating : Top Solder
+      File : PCB_PROJECT.GTS
+
+    Adding Layer      : Top Solder
+
+    Adding Layer      : TOP
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D44
+    D54
+    D55
+    D56
+    D57
+    D58
+    D59
+    D60
+    D61
+    D62
+    D63
+    D64
+    D65
+    D66
+    D67
+    D68
+    D69
+    D70
+    D71
+    D72
+    D73
+    D74
+    D75
+    D76
+    D77
+    D78
+    D79
+    D80
+    D81
+    D82
+    D83
+    D84
+    D85
+    D86
+    D87
+    D88
+    D89
+    D90
+    D91
+    D92
+    D93
+    D94
+    D95
+    D96
+*************************************************************
+
+*************************************************************
+Generating : Top Paste
+      File : PCB_PROJECT.GTP
+
+    Adding Layer      : Top Paste
+
+    Adding Layer      : TOP
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D20
+    D21
+    D22
+    D23
+    D24
+    D25
+    D26
+    D27
+    D28
+    D29
+    D30
+    D31
+    D32
+    D33
+    D34
+    D35
+    D36
+    D37
+    D38
+    D39
+    D40
+    D41
+    D42
+    D43
+    D44
+    D45
+    D46
+    D47
+    D48
+    D49
+    D50
+    D51
+    D52
+    D53
+*************************************************************
+
+*************************************************************
+Generating : Top Overlay
+      File : PCB_PROJECT.GTO
+
+    Adding Layer      : Top Overlay
+
+
+Used DCodes :
+    D10
+    D11
+    D12
+    D13
+    D14
+    D15
+    D16
+    D17
+    D18
+    D19
+*************************************************************
+
+*************************************************************
+Generating : Top Pad Master
+      File : PCB_PROJECT.GPT
+
+    Adding Layer      : TOP
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D20
+    D21
+    D22
+    D23
+    D24
+    D25
+    D26
+    D27
+    D28
+    D29
+    D30
+    D31
+    D32
+    D33
+    D34
+    D35
+    D36
+    D37
+    D38
+    D39
+    D40
+    D41
+    D42
+    D43
+    D44
+    D45
+    D46
+    D47
+    D48
+    D49
+    D50
+    D51
+    D52
+    D98
+    D99
+    D100
+    D101
+    D102
+    D103
+    D104
+    D105
+    D106
+*************************************************************
+
+*************************************************************
+Generating : Bottom Pad Master
+      File : PCB_PROJECT.GPB
+
+    Adding Layer      : BOTTOM
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D98
+    D99
+    D100
+    D101
+    D102
+    D103
+    D104
+    D105
+    D106
+*************************************************************
+
+*************************************************************
+Generating : BOTTOM
+      File : PCB_PROJECT.GBL
+
+    Adding Layer      : BOTTOM
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D13
+    D17
+    D98
+    D99
+    D100
+    D101
+    D102
+    D103
+    D104
+    D105
+    D106
+    D107
+    D118
+*************************************************************
+
+*************************************************************
+Generating : VCC
+      File : PCB_PROJECT.GP2
+
+    Adding Layer      : VCC
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D108
+    D109
+    D110
+    D111
+    D112
+    D113
+    D114
+    D115
+    D116
+    D117
+*************************************************************
+
+*************************************************************
+Generating : GND
+      File : PCB_PROJECT.GP1
+
+    Adding Layer      : GND
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D108
+    D109
+    D110
+    D111
+    D112
+    D113
+    D114
+    D115
+    D116
+    D117
+*************************************************************
+
+*************************************************************
+Generating : TOP
+      File : PCB_PROJECT.GTL
+
+    Adding Layer      : TOP
+
+    Adding Layer      : Multi-Layer
+
+
+Used DCodes :
+    D13
+    D16
+    D17
+    D20
+    D21
+    D22
+    D23
+    D24
+    D25
+    D26
+    D27
+    D28
+    D29
+    D30
+    D31
+    D32
+    D33
+    D34
+    D35
+    D36
+    D37
+    D38
+    D39
+    D40
+    D41
+    D42
+    D43
+    D44
+    D45
+    D46
+    D47
+    D48
+    D49
+    D50
+    D51
+    D52
+    D53
+    D97
+    D98
+    D99
+    D100
+    D101
+    D102
+    D103
+    D104
+    D105
+    D106
+    D107
+*************************************************************
+
+*************************************************************
+Generating : Drill Drawing
+      File : PCB_PROJECT.GD1
+
+    Adding Drill Pair : TOP-BOTTOM
+
+    Adding Layer      : Drill Drawing
+
+
+Used DCodes :
+    D125
+    D126
+*************************************************************
+
+*************************************************************
+Generating : Drill Guide
+      File : PCB_PROJECT.GG1
+
+    Adding Drill Pair : TOP-BOTTOM
+
+    Adding Layer      : Drill Guide
+
+
+Used DCodes :
+    D125
+*************************************************************
+
