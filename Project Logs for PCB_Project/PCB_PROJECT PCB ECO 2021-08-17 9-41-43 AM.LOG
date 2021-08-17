@@ -1,0 +1,36 @@
+Removed Pin From Net: NetName=BAT+ Pin=IC5-1
+Added Component: Designator=C23(CAPC1608X90X40ML10T20)
+Add component (AddParameter): Name = "Capacitor Type"; Value = "Ceramic"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Case/Package"; Value = "0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Operating Temperature"; Value = "125°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Min Operating Temperature"; Value = "-55°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mounting Technology"; Value = "SM"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pins"; Value = "2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS Compliant"; Value = "True"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "10%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "0.1uF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = "50V"; VariantName = "[No Variations]"
+Added Component: Designator=R17(RES 0603)
+Add component (AddParameter): Name = "Datasheet"; Value = "http://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C301.pdf?src-supplier=Farnell"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PN"; Value = "ERJ-3GEY0R00V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Mouser"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "667-ERJ-3GEY0R00V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "5%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "0 Ohm"; VariantName = "[No Variations]"
+Added Component: Designator=R18(RES 0603)
+Add component (AddParameter): Name = "Datasheet"; Value = "http://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C301.pdf?src-supplier=Farnell"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PN"; Value = "ERJ-3GEY0R00V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Mouser"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "667-ERJ-3GEY0R00V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "5%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "0 Ohm"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=BAT+ Pin=C23-1
+Added Pin To Net: NetName=GND Pin=C23-2
+Added Pin To Net: NetName=GND Pin=IC5-3
+Added Pin To Net: NetName=BAT+ Pin=R17-1
+Added Pin To Net: NetName=NetIC5_1 Pin=IC5-1
+Added Pin To Net: NetName=NetIC5_1 Pin=R17-2
+Added Net: Name=NetIC5_1
+Added Pin To Net: NetName=NetIC5_12 Pin=IC5-12
+Added Pin To Net: NetName=NetIC5_12 Pin=R18-1
+Added Net: Name=NetIC5_12

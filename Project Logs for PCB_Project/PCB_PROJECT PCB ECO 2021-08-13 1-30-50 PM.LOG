@@ -1,0 +1,2 @@
+Change Component Comment : Designator=R6 Old Comment=RES 0 Ohm 5% 0.1W [0603] New Comment=
+Change Component Library : Designator=R6 Old Library=Schlib_For_High_Voltage_Sensor.SchLib New Library=MasterLib.SchLib

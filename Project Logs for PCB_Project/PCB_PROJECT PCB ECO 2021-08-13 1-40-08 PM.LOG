@@ -1,0 +1,8 @@
+Change Component Footprint: Designator=R7 Old Footprint=RESC0603 New Footprint=RES 0603
+Change Component Comment : Designator=R7 Old Comment=RES SMD 10K OHM 5% 0.1W 0603 New Comment=RES 10K 5% 0.1W [0603]
+Change component parameters: Designator = "R7" ("R7"); Footprint = "RESC0603"; UniqueID = "\RXRGLHDL" ("\RXRGLHDL")
+Change component parameters (AddParameter): Name = "PN"; Value = "CR0603-JW-103ELF"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Newark"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "84W7243"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Tolerance"; Value = "5%"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "10K"; VariantName = "[No Variations]"

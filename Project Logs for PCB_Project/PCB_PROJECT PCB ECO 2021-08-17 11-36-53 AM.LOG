@@ -1,0 +1,48 @@
+Removed Pin From Net: NetName=BAT+ Pin=C23-1
+Removed Pin From Net: NetName=GND Pin=C23-2
+Removed Pin From Net: NetName=PACK- Pin=R16-1
+Removed Pin From Net: NetName=GND Pin=R16-2
+Removed Pin From Net: NetName=BAT+ Pin=R17-1
+Removed Pin From Net: NetName=NetIC5_1 Pin=R17-2
+Change Component Comment : Designator=R18 Old Comment=RES 0 Ohm 5% 0.1W [0603] New Comment=RES 0 Ohm 100K % 0.1W [0603]
+Change Component Designator: OldDesignator=J? NewDesignator=J2
+Change Component Description : Designator=R18 Old Description=RES 0 Ohm 5% 0.1W [0603] New Description=RES 100K Ohm 5% 0.1W [0603]
+Change component parameters: Designator = "R18" ("R18"); Footprint = "RES 0603"; UniqueID = "\IGRJFCVQ" ("\IGRJFCVQ")
+Change component parameters (AddParameter): Name = "Datasheet"; Value = "http://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C301.pdf?src-supplier=Farnell"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "PN"; Value = "ERJ-3GEY0R00V"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier 1"; Value = "Mouser"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Supplier Part Number 1"; Value = "667-ERJ-3GEY0R00V"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Tolerance"; Value = "5%"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Value"; Value = "100K"; VariantName = "[No Variations]"
+Added Component: Designator=C24(CAPC1608X90X40ML10T20)
+Add component (AddParameter): Name = "Capacitor Type"; Value = "Ceramic"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Case/Package"; Value = "0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Operating Temperature"; Value = "125°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Min Operating Temperature"; Value = "-55°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mounting Technology"; Value = "SM"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pins"; Value = "2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS Compliant"; Value = "True"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "10%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "0.1uF"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = "50V"; VariantName = "[No Variations]"
+Added Component: Designator=J3(JUMPER)
+Add component (AddParameter): Name = "Case/Package"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Operating Temperature"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Min Operating Temperature"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mounting Technology"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pins"; Value = "2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Power"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Resistance"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "RoHS Compliant"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = ""; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Voltage Rating"; Value = ""; VariantName = "[No Variations]"
+Added Pin To Net: NetName=GND Pin=C23-1
+Added Pin To Net: NetName=BAT+ Pin=C23-2
+Added Pin To Net: NetName=GND Pin=C24-1
+Added Pin To Net: NetName=BAT+ Pin=C24-2
+Added Pin To Net: NetName=PACK- Pin=J2-1
+Added Pin To Net: NetName=GND Pin=J2-2
+Added Pin To Net: NetName=BAT+ Pin=J3-1
+Added Pin To Net: NetName=NetIC5_1 Pin=J3-2
+Added Pin To Net: NetName=2.5V Pin=R18-2

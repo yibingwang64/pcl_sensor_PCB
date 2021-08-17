@@ -1,0 +1,14 @@
+Removed Pin From Net: NetName=BAT- Pin=R14-1
+Removed Pin From Net: NetName=PACK- Pin=R14-2
+Change Component Footprint: Designator=R14 Old Footprint=RES 0603 New Footprint=RESC5025X88N - duplicate1
+Change Component Comment : Designator=R14 Old Comment=0.1 Ohm New Comment=WSL2010R1000FEA
+Change component parameters: Designator = "R14" ("R14"); Footprint = "RES 0603"; UniqueID = "\EQVWQPLW" ("\EQVWQPLW")
+Change component parameters (AddParameter): Name = "Arrow Part Number"; Value = "WSL2010R0100FEA"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Arrow Price/Stock"; Value = "https://www.arrow.com/en/products/wsl2010r0100fea/vishay"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Datasheet Link"; Value = "http://componentsearchengine.com/Datasheets/1/WSL2010R0100FEA.pdf"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer_Name"; Value = "Vishay"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Manufacturer_Part_Number"; Value = "WSL2010R0100FEA"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mouser Part Number"; Value = "71-WSL2010R0100FEA"; VariantName = "[No Variations]"
+Change component parameters (AddParameter): Name = "Mouser Price/Stock"; Value = "https://www.mouser.co.uk/ProductDetail/Vishay-Dale/WSL2010R0100FEA?qs=vgLn9hCS5y9zV4J1uLqJFA%3D%3D"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=PACK- Pin=R14-1
+Added Pin To Net: NetName=BAT- Pin=R14-2

@@ -1,0 +1,29 @@
+Removed Pin From Net: NetName=PACK- Pin=J2-1
+Removed Pin From Net: NetName=GND Pin=J2-2
+Added Component: Designator=R16(RESC0603(1608)_L)
+Add component (AddParameter): Name = "Case/Package"; Value = "0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mounting Technology"; Value = "SMT"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pins"; Value = "2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "0O"; VariantName = "[No Variations]"
+Added Component: Designator=R17(RESC0603(1608)_L)
+Add component (AddParameter): Name = "Case/Package"; Value = "0603"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Max Operating Temperature"; Value = "155°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Min Operating Temperature"; Value = "-55°C"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pins"; Value = "2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "0"; VariantName = "[No Variations]"
+Added Component: Designator=R19(RESC0402(1005)_L)
+Add component (AddParameter): Name = "Case/Package"; Value = "0402"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Mounting Technology"; Value = "SMT"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Pins"; Value = "2"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "0O"; VariantName = "[No Variations]"
+Added Component: Designator=R20(RES 0603)
+Add component (AddParameter): Name = "Datasheet"; Value = "http://industrial.panasonic.com/cdbs/www-data/pdf/RDA0000/AOA0000C301.pdf?src-supplier=Farnell"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "PN"; Value = "ERJ-3GEY0R00V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier 1"; Value = "Mouser"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Supplier Part Number 1"; Value = "667-ERJ-3GEY0R00V"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Tolerance"; Value = "5%"; VariantName = "[No Variations]"
+Add component (AddParameter): Name = "Value"; Value = "0 Ohm"; VariantName = "[No Variations]"
+Added Pin To Net: NetName=BAT- Pin=R14-2
+Added Pin To Net: NetName=BAT- Pin=R15-1
+Added Pin To Net: NetName=PACK- Pin=R20-1
+Added Pin To Net: NetName=GND Pin=R20-2
