@@ -126,6 +126,23 @@ GenerateClassCluster=0
 DocumentUniqueId=MPRJBCLL
 
 [Document6]
+DocumentPath=..\..\..\Downloads\LP2981-50DBVR\LP2981-50DBVR.SchLib
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=AATNBEAO
+
+[Document7]
 DocumentPath=PCB_Project1\PCB_PROJECT.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -142,7 +159,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=XWNDRCTY
 
-[Document7]
+[Document8]
 DocumentPath=Schlib_For_High_Voltage_Sensor.SchLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -159,7 +176,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=SKJZTBBT
 
-[Document8]
+[Document9]
 DocumentPath=PcbLibForHigh_Voltage_Sensor.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -176,7 +193,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=IQDHLDWG
 
-[Document9]
+[Document10]
 DocumentPath=PCB_PROJECT.PcbDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -193,7 +210,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=VQLSMMOE
 
-[Document10]
+[Document11]
 DocumentPath=[1]MCU.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -210,7 +227,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=TIKADFCE
 
-[Document11]
+[Document12]
 DocumentPath=[2]Battery.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -227,7 +244,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=GOMNAPEK
 
-[Document12]
+[Document13]
 DocumentPath=[3]USB.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -244,7 +261,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=MPNXSMXW
 
-[Document13]
+[Document14]
 DocumentPath=[4]Button.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -261,7 +278,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=GFAAYDMJ
 
-[Document14]
+[Document15]
 DocumentPath=[5] Sensors.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -278,7 +295,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=MEVZNRXD
 
-[Document15]
+[Document16]
 DocumentPath=[6]3-axis-accelerometer.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -295,7 +312,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=IESSGSVT
 
-[Document16]
+[Document17]
 DocumentPath=[7]Halleffec.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -312,7 +329,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=SRREAZGK
 
-[Document17]
+[Document18]
 DocumentPath=PCB_Project.IntLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -329,7 +346,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document18]
+[Document19]
 DocumentPath=[8]O2-Flood.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -346,8 +363,8 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=DPWISWVK
 
-[Document19]
-DocumentPath=[9]Battery Managment.SchDoc
+[Document20]
+DocumentPath=..\voltage_sensor_PCB\[6]Battery Managment.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -380,210 +397,6 @@ Value=
 
 [GeneratedDocument1]
 DocumentPath=Project Outputs for PCB_Project\Design Rule Check - PCB_PROJECT.html
-DItemRevisionGUID=
-
-[GeneratedDocument2]
-DocumentPath=Project Outputs for PCB_Project\PCB_PROJECT-BoardEdgeRout.TXT
-DItemRevisionGUID=
-
-[GeneratedDocument3]
-DocumentPath=Project Outputs for PCB_Project\PCB_PROJECT-RoundHoles.TXT
-DItemRevisionGUID=
-
-[GeneratedDocument4]
-DocumentPath=Project Outputs for PCB_Project\PCB_PROJECT-SlotHoles.TXT
-DItemRevisionGUID=
-
-[GeneratedDocument5]
-DocumentPath=Project Outputs for PCB_Project\PCB_PROJECT.1
-DItemRevisionGUID=
-
-[GeneratedDocument6]
-DocumentPath=Project Outputs for PCB_Project\PCB_PROJECT.2
-DItemRevisionGUID=
-
-[GeneratedDocument7]
-DocumentPath=Project Outputs for PCB_Project\PCB_PROJECT.3
-DItemRevisionGUID=
-
-[GeneratedDocument8]
-DocumentPath=Project Outputs for PCB_Project\PCB_PROJECT.DRR
-DItemRevisionGUID=
-
-[GeneratedDocument9]
-DocumentPath=Project Outputs for PCB_Project\PCB_PROJECT.EXTREP
-DItemRevisionGUID=
-
-[GeneratedDocument10]
-DocumentPath=Project Outputs for PCB_Project\PCB_PROJECT.GBL
-DItemRevisionGUID=
-
-[GeneratedDocument11]
-DocumentPath=Project Outputs for PCB_Project\PCB_PROJECT.GBO
-DItemRevisionGUID=
-
-[GeneratedDocument12]
-DocumentPath=Project Outputs for PCB_Project\PCB_PROJECT.GBP
-DItemRevisionGUID=
-
-[GeneratedDocument13]
-DocumentPath=Project Outputs for PCB_Project\PCB_PROJECT.GBS
-DItemRevisionGUID=
-
-[GeneratedDocument14]
-DocumentPath=Project Outputs for PCB_Project\PCB_PROJECT.GD1
-DItemRevisionGUID=
-
-[GeneratedDocument15]
-DocumentPath=Project Outputs for PCB_Project\PCB_PROJECT.GG1
-DItemRevisionGUID=
-
-[GeneratedDocument16]
-DocumentPath=Project Outputs for PCB_Project\PCB_PROJECT.GKO
-DItemRevisionGUID=
-
-[GeneratedDocument17]
-DocumentPath=Project Outputs for PCB_Project\PCB_PROJECT.GM1
-DItemRevisionGUID=
-
-[GeneratedDocument18]
-DocumentPath=Project Outputs for PCB_Project\PCB_PROJECT.GM2
-DItemRevisionGUID=
-
-[GeneratedDocument19]
-DocumentPath=Project Outputs for PCB_Project\PCB_PROJECT.GM3
-DItemRevisionGUID=
-
-[GeneratedDocument20]
-DocumentPath=Project Outputs for PCB_Project\PCB_PROJECT.GM4
-DItemRevisionGUID=
-
-[GeneratedDocument21]
-DocumentPath=Project Outputs for PCB_Project\PCB_PROJECT.GM5
-DItemRevisionGUID=
-
-[GeneratedDocument22]
-DocumentPath=Project Outputs for PCB_Project\PCB_PROJECT.GM6
-DItemRevisionGUID=
-
-[GeneratedDocument23]
-DocumentPath=Project Outputs for PCB_Project\PCB_PROJECT.GM7
-DItemRevisionGUID=
-
-[GeneratedDocument24]
-DocumentPath=Project Outputs for PCB_Project\PCB_PROJECT.GM8
-DItemRevisionGUID=
-
-[GeneratedDocument25]
-DocumentPath=Project Outputs for PCB_Project\PCB_PROJECT.GM9
-DItemRevisionGUID=
-
-[GeneratedDocument26]
-DocumentPath=Project Outputs for PCB_Project\PCB_PROJECT.GM10
-DItemRevisionGUID=
-
-[GeneratedDocument27]
-DocumentPath=Project Outputs for PCB_Project\PCB_PROJECT.GM11
-DItemRevisionGUID=
-
-[GeneratedDocument28]
-DocumentPath=Project Outputs for PCB_Project\PCB_PROJECT.GM12
-DItemRevisionGUID=
-
-[GeneratedDocument29]
-DocumentPath=Project Outputs for PCB_Project\PCB_PROJECT.GM13
-DItemRevisionGUID=
-
-[GeneratedDocument30]
-DocumentPath=Project Outputs for PCB_Project\PCB_PROJECT.GM15
-DItemRevisionGUID=
-
-[GeneratedDocument31]
-DocumentPath=Project Outputs for PCB_Project\PCB_PROJECT.GM16
-DItemRevisionGUID=
-
-[GeneratedDocument32]
-DocumentPath=Project Outputs for PCB_Project\PCB_PROJECT.GM19
-DItemRevisionGUID=
-
-[GeneratedDocument33]
-DocumentPath=Project Outputs for PCB_Project\PCB_PROJECT.GM20
-DItemRevisionGUID=
-
-[GeneratedDocument34]
-DocumentPath=Project Outputs for PCB_Project\PCB_PROJECT.GM21
-DItemRevisionGUID=
-
-[GeneratedDocument35]
-DocumentPath=Project Outputs for PCB_Project\PCB_PROJECT.GM22
-DItemRevisionGUID=
-
-[GeneratedDocument36]
-DocumentPath=Project Outputs for PCB_Project\PCB_PROJECT.GM23
-DItemRevisionGUID=
-
-[GeneratedDocument37]
-DocumentPath=Project Outputs for PCB_Project\PCB_PROJECT.GM24
-DItemRevisionGUID=
-
-[GeneratedDocument38]
-DocumentPath=Project Outputs for PCB_Project\PCB_PROJECT.GM29
-DItemRevisionGUID=
-
-[GeneratedDocument39]
-DocumentPath=Project Outputs for PCB_Project\PCB_PROJECT.GML
-DItemRevisionGUID=
-
-[GeneratedDocument40]
-DocumentPath=Project Outputs for PCB_Project\PCB_PROJECT.GP1
-DItemRevisionGUID=
-
-[GeneratedDocument41]
-DocumentPath=Project Outputs for PCB_Project\PCB_PROJECT.GP2
-DItemRevisionGUID=
-
-[GeneratedDocument42]
-DocumentPath=Project Outputs for PCB_Project\PCB_PROJECT.GPB
-DItemRevisionGUID=
-
-[GeneratedDocument43]
-DocumentPath=Project Outputs for PCB_Project\PCB_PROJECT.GPT
-DItemRevisionGUID=
-
-[GeneratedDocument44]
-DocumentPath=Project Outputs for PCB_Project\PCB_PROJECT.GTL
-DItemRevisionGUID=
-
-[GeneratedDocument45]
-DocumentPath=Project Outputs for PCB_Project\PCB_PROJECT.GTO
-DItemRevisionGUID=
-
-[GeneratedDocument46]
-DocumentPath=Project Outputs for PCB_Project\PCB_PROJECT.GTP
-DItemRevisionGUID=
-
-[GeneratedDocument47]
-DocumentPath=Project Outputs for PCB_Project\PCB_PROJECT.GTS
-DItemRevisionGUID=
-
-[GeneratedDocument48]
-DocumentPath=Project Outputs for PCB_Project\PCB_PROJECT.LDP
-DItemRevisionGUID=
-
-[GeneratedDocument49]
-DocumentPath=Project Outputs for PCB_Project\PCB_PROJECT.REP
-DItemRevisionGUID=
-
-[GeneratedDocument50]
-DocumentPath=Project Outputs for PCB_Project\PCB_PROJECT.RUL
-DItemRevisionGUID=
-
-[GeneratedDocument51]
-DocumentPath=Project Outputs for PCB_Project\Pick Place for PCB_PROJECT.csv
-DItemRevisionGUID=
-
-[GeneratedDocument52]
-DocumentPath=Project Outputs for PCB_Project\Pick Place for PCB_PROJECT.txt
 DItemRevisionGUID=
 
 [Configuration1]
@@ -2695,28 +2508,208 @@ NetClassManualEnabled=1
 NetClassSeparateForBusSections=0
 
 [LibraryUpdateOptions]
-SelectedOnly=1
+SelectedOnly=0
 UpdateVariants=1
 UpdateToLatestRevision=1
 PartTypes=0
-ComponentLibIdentifierKind0=Library Name And Type
-ComponentLibraryIdentifier0=MasterLib.SchLib
-ComponentDesignItemID0=RES 1M 1% 0.1W [0603]
-ComponentSymbolReference0=RES 1M 1% 0.1W [0603]
+ComponentLibIdentifierKind0=Any
+ComponentLibraryIdentifier0=
+ComponentDesignItemID0=TLV75533PDBVR
+ComponentSymbolReference0=TLV75533PDBVR
 ComponentUpdate0=1
 ComponentIsDeviceSheet0=0
-ComponentLibIdentifierKind1=Library Name Only
-ComponentLibraryIdentifier1=Latium Technologies
-ComponentDesignItemID1=CMP-001-00017-4
-ComponentSymbolReference1=CAP-NP-2
+ComponentLibIdentifierKind1=Any
+ComponentLibraryIdentifier1=
+ComponentDesignItemID1=USBLC6-2SC6
+ComponentSymbolReference1=USBLC6-2SC6
 ComponentUpdate1=1
 ComponentIsDeviceSheet1=0
-ComponentLibIdentifierKind2=Library Name Only
-ComponentLibraryIdentifier2=Latium Technologies
-ComponentDesignItemID2=CMP-002-00038-1
-ComponentSymbolReference2=USB-5-6SHLD
+ComponentLibIdentifierKind2=Library Name And Type
+ComponentLibraryIdentifier2=MasterLib.SchLib
+ComponentDesignItemID2=Ambient Light Sensor I2C
+ComponentSymbolReference2=Ambient Light Sensor I2C
 ComponentUpdate2=1
 ComponentIsDeviceSheet2=0
+ComponentLibIdentifierKind3=Library Name And Type
+ComponentLibraryIdentifier3=MasterLib.SchLib
+ComponentDesignItemID3=BME680
+ComponentSymbolReference3=BME680
+ComponentUpdate3=1
+ComponentIsDeviceSheet3=0
+ComponentLibIdentifierKind4=Library Name And Type
+ComponentLibraryIdentifier4=MasterLib.SchLib
+ComponentDesignItemID4=Ferrite Bead
+ComponentSymbolReference4=Ferrite Bead
+ComponentUpdate4=1
+ComponentIsDeviceSheet4=0
+ComponentLibIdentifierKind5=Library Name And Type
+ComponentLibraryIdentifier5=MasterLib.SchLib
+ComponentDesignItemID5=IC BUFFER NON-INVERT 5.5V SC88
+ComponentSymbolReference5=IC BUFFER NON-INVERT 5.5V SC88
+ComponentUpdate5=1
+ComponentIsDeviceSheet5=0
+ComponentLibIdentifierKind6=Library Name And Type
+ComponentLibraryIdentifier6=MasterLib.SchLib
+ComponentDesignItemID6=LED BLUE CLEAR 0603 SMD
+ComponentSymbolReference6=LED BLUE CLEAR 0603 SMD
+ComponentUpdate6=1
+ComponentIsDeviceSheet6=0
+ComponentLibIdentifierKind7=Library Name And Type
+ComponentLibraryIdentifier7=MasterLib.SchLib
+ComponentDesignItemID7=LOX-O2-S
+ComponentSymbolReference7=LOX-O2-S
+ComponentUpdate7=1
+ComponentIsDeviceSheet7=0
+ComponentLibIdentifierKind8=Library Name And Type
+ComponentLibraryIdentifier8=MasterLib.SchLib
+ComponentDesignItemID8=PNP General Purpose SMD
+ComponentSymbolReference8=PNP General Purpose SMD
+ComponentUpdate8=1
+ComponentIsDeviceSheet8=0
+ComponentLibIdentifierKind9=Library Name And Type
+ComponentLibraryIdentifier9=MasterLib.SchLib
+ComponentDesignItemID9=RES 0 Ohm [0603]
+ComponentSymbolReference9=RES 0 Ohm [0603]
+ComponentUpdate9=1
+ComponentIsDeviceSheet9=0
+ComponentLibIdentifierKind10=Library Name And Type
+ComponentLibraryIdentifier10=MasterLib.SchLib
+ComponentDesignItemID10=RES 10K 5% 0.1W [0603]
+ComponentSymbolReference10=RES 10K 5% 0.1W [0603]
+ComponentUpdate10=1
+ComponentIsDeviceSheet10=0
+ComponentLibIdentifierKind11=Library Name And Type
+ComponentLibraryIdentifier11=MasterLib.SchLib
+ComponentDesignItemID11=RES 1M 1% 0.1W [0603]
+ComponentSymbolReference11=RES 1M 1% 0.1W [0603]
+ComponentUpdate11=1
+ComponentIsDeviceSheet11=0
+ComponentLibIdentifierKind12=Library Name And Type
+ComponentLibraryIdentifier12=MasterLib.SchLib
+ComponentDesignItemID12=RES 3.3M 1% 0.1W [0603]
+ComponentSymbolReference12=RES 3.3M 1% 0.1W [0603]
+ComponentUpdate12=1
+ComponentIsDeviceSheet12=0
+ComponentLibIdentifierKind13=Library Name And Type
+ComponentLibraryIdentifier13=MasterLib.SchLib
+ComponentDesignItemID13=RES 4.7K 1% [0603]
+ComponentSymbolReference13=RES 4.7K 1% [0603]
+ComponentUpdate13=1
+ComponentIsDeviceSheet13=0
+ComponentLibIdentifierKind14=Library Name And Type
+ComponentLibraryIdentifier14=MasterLib.SchLib
+ComponentDesignItemID14=TRM BLCK 1x2
+ComponentSymbolReference14=TRM BLCK 1x2
+ComponentUpdate14=1
+ComponentIsDeviceSheet14=0
+ComponentLibIdentifierKind15=Library Name And Type
+ComponentLibraryIdentifier15=OTX_Lib_Charger.SchLib
+ComponentDesignItemID15=68000-104HLF
+ComponentSymbolReference15=68000-104HLF
+ComponentUpdate15=1
+ComponentIsDeviceSheet15=0
+ComponentLibIdentifierKind16=Library Name And Type
+ComponentLibraryIdentifier16=PCB_High_Voltage_Sensor.IntLib
+ComponentDesignItemID16=BMA280
+ComponentSymbolReference16=BMA280
+ComponentUpdate16=1
+ComponentIsDeviceSheet16=0
+ComponentLibIdentifierKind17=Library Name And Type
+ComponentLibraryIdentifier17=PCB_High_Voltage_Sensor.IntLib
+ComponentDesignItemID17=EXB34V330JV
+ComponentSymbolReference17=EXB34V330JV
+ComponentUpdate17=1
+ComponentIsDeviceSheet17=0
+ComponentLibIdentifierKind18=Library Name And Type
+ComponentLibraryIdentifier18=PCB_High_Voltage_Sensor.IntLib
+ComponentDesignItemID18=SM353LT
+ComponentSymbolReference18=SM353LT
+ComponentUpdate18=1
+ComponentIsDeviceSheet18=0
+ComponentLibIdentifierKind19=Library Name And Type
+ComponentLibraryIdentifier19=PCB_Project.SCHLIB
+ComponentDesignItemID19=BK-82
+ComponentSymbolReference19=BK-82
+ComponentUpdate19=1
+ComponentIsDeviceSheet19=0
+ComponentLibIdentifierKind20=Library Name And Type
+ComponentLibraryIdentifier20=Schlib_For_High_Voltage_Sensor.SchLib
+ComponentDesignItemID20=0900AT43A0070E
+ComponentSymbolReference20=0900AT43A0070E
+ComponentUpdate20=1
+ComponentIsDeviceSheet20=0
+ComponentLibIdentifierKind21=Library Name And Type
+ComponentLibraryIdentifier21=Schlib_For_High_Voltage_Sensor.SchLib
+ComponentDesignItemID21=BQ35100PW
+ComponentSymbolReference21=BQ35100PW
+ComponentUpdate21=1
+ComponentIsDeviceSheet21=0
+ComponentLibIdentifierKind22=Library Name And Type
+ComponentLibraryIdentifier22=Schlib_For_High_Voltage_Sensor.SchLib
+ComponentDesignItemID22=Button
+ComponentSymbolReference22=Button
+ComponentUpdate22=1
+ComponentIsDeviceSheet22=0
+ComponentLibIdentifierKind23=Library Name And Type
+ComponentLibraryIdentifier23=Schlib_For_High_Voltage_Sensor.SchLib
+ComponentDesignItemID23=CDSQR4148-HF_1
+ComponentSymbolReference23=CDSQR4148-HF_1
+ComponentUpdate23=1
+ComponentIsDeviceSheet23=0
+ComponentLibIdentifierKind24=Library Name And Type
+ComponentLibraryIdentifier24=Schlib_For_High_Voltage_Sensor.SchLib
+ComponentDesignItemID24=ERT-J1VG103JA
+ComponentSymbolReference24=ERT-J1VG103JA
+ComponentUpdate24=1
+ComponentIsDeviceSheet24=0
+ComponentLibIdentifierKind25=Library Name And Type
+ComponentLibraryIdentifier25=Schlib_For_High_Voltage_Sensor.SchLib
+ComponentDesignItemID25=GRM188R71H103KA01D
+ComponentSymbolReference25=GRM188R71H103KA01D
+ComponentUpdate25=1
+ComponentIsDeviceSheet25=0
+ComponentLibIdentifierKind26=Library Name And Type
+ComponentLibraryIdentifier26=Schlib_For_High_Voltage_Sensor.SchLib
+ComponentDesignItemID26=TYPEABZ
+ComponentSymbolReference26=TYPEABZ
+ComponentUpdate26=1
+ComponentIsDeviceSheet26=0
+ComponentLibIdentifierKind27=Library Name And Type
+ComponentLibraryIdentifier27=Schlib_For_High_Voltage_Sensor.SchLib
+ComponentDesignItemID27=U.FL-R-SMT-1
+ComponentSymbolReference27=U.FL-R-SMT-1
+ComponentUpdate27=1
+ComponentIsDeviceSheet27=0
+ComponentLibIdentifierKind28=Library Name And Type
+ComponentLibraryIdentifier28=Schlib_For_High_Voltage_Sensor.SchLib
+ComponentDesignItemID28=WSL2010R0100FEA
+ComponentSymbolReference28=WSL2010R0100FEA
+ComponentUpdate28=1
+ComponentIsDeviceSheet28=0
+ComponentLibIdentifierKind29=Library Name Only
+ComponentLibraryIdentifier29=Latium Technologies
+ComponentDesignItemID29=CMP-001-00005-4
+ComponentSymbolReference29=CAP-NP-2
+ComponentUpdate29=1
+ComponentIsDeviceSheet29=0
+ComponentLibIdentifierKind30=Library Name Only
+ComponentLibraryIdentifier30=Latium Technologies
+ComponentDesignItemID30=CMP-001-00017-4
+ComponentSymbolReference30=CAP-NP-2
+ComponentUpdate30=1
+ComponentIsDeviceSheet30=0
+ComponentLibIdentifierKind31=Library Name Only
+ComponentLibraryIdentifier31=Latium Technologies
+ComponentDesignItemID31=CMP-001-00075-2
+ComponentSymbolReference31=CAP-NP-2
+ComponentUpdate31=1
+ComponentIsDeviceSheet31=0
+ComponentLibIdentifierKind32=Library Name Only
+ComponentLibraryIdentifier32=Latium Technologies
+ComponentDesignItemID32=CMP-002-00038-1
+ComponentSymbolReference32=USB-5-6SHLD
+ComponentUpdate32=1
+ComponentIsDeviceSheet32=0
 FullReplace=1
 UpdateDesignatorLock=1
 UpdatePartIDLock=1
@@ -2730,89 +2723,377 @@ RemoveParameters=0
 AddModels=1
 RemoveModels=1
 UpdateCurrentModels=1
-ParameterName0=Capacitor Type
+ParameterName0=Applications
 ParameterUpdate0=1
-ParameterName1=Case/Package
+ParameterName1=Arrow Part Number
 ParameterUpdate1=1
-ParameterName2=Comment
+ParameterName2=Arrow Price/Stock
 ParameterUpdate2=1
-ParameterName3=Component Kind
+ParameterName3=Automotive
 ParameterUpdate3=1
-ParameterName4=Connector Type
+ParameterName4=Availability
 ParameterUpdate4=1
-ParameterName5=Contact Material
+ParameterName5=B Value Tolerance
 ParameterUpdate5=1
-ParameterName6=Contact Plating
+ParameterName6=B0/50
 ParameterUpdate6=1
-ParameterName7=Current Rating
+ParameterName7=B25/100
 ParameterUpdate7=1
-ParameterName8=Datasheet
+ParameterName8=B25/50
 ParameterUpdate8=1
-ParameterName9=Datasheet URL
+ParameterName9=B25/75
 ParameterUpdate9=1
-ParameterName10=Datasheet Version
+ParameterName10=B25/85
 ParameterUpdate10=1
-ParameterName11=Description
+ParameterName11=Capacitance
 ParameterUpdate11=1
-ParameterName12=Gender
+ParameterName12=Capacitor Type
 ParameterUpdate12=1
-ParameterName13=Lead Pitch
+ParameterName13=Case/Package
 ParameterUpdate13=1
-ParameterName14=Library Reference
+ParameterName14=Category
 ParameterUpdate14=1
-ParameterName15=Manufacturer
+ParameterName15=Colour
 ParameterUpdate15=1
-ParameterName16=Manufacturer URL
+ParameterName16=Comment
 ParameterUpdate16=1
-ParameterName17=Max Operating Temperature
+ParameterName17=Component Kind
 ParameterUpdate17=1
-ParameterName18=Min Operating Temperature
+ParameterName18=ComponentLink1Description
 ParameterUpdate18=1
-ParameterName19=Mounting Technology
+ParameterName19=ComponentLink1URL
 ParameterUpdate19=1
-ParameterName20=Package Description
+ParameterName20=ComponentLink2Description
 ParameterUpdate20=1
-ParameterName21=Package Quantity
+ParameterName21=ComponentLink2URL
 ParameterUpdate21=1
-ParameterName22=Package Reference
+ParameterName22=ComponentLink3Description
 ParameterUpdate22=1
-ParameterName23=Packaging
+ParameterName23=ComponentLink3URL
 ParameterUpdate23=1
-ParameterName24=Pins
+ParameterName24=ComponentLink4Description
 ParameterUpdate24=1
-ParameterName25=PN
+ParameterName25=ComponentLink4URL
 ParameterUpdate25=1
-ParameterName26=Power
+ParameterName26=Connector Type
 ParameterUpdate26=1
-ParameterName27=RoHS Compliant
+ParameterName27=Contact Current Rating
 ParameterUpdate27=1
-ParameterName28=Supplier 1
+ParameterName28=Contact Gender
 ParameterUpdate28=1
-ParameterName29=Supplier Part Number 1
+ParameterName29=Contact Material
 ParameterUpdate29=1
-ParameterName30=Tolerance
+ParameterName30=Contact Mating Length
 ParameterUpdate30=1
-ParameterName31=Value
+ParameterName31=Contact Plating
 ParameterUpdate31=1
-ParameterName32=Voltage Rating
+ParameterName32=Contact Resistance
 ParameterUpdate32=1
+ParameterName33=Current Rating
+ParameterUpdate33=1
+ParameterName34=Datasheet
+ParameterUpdate34=1
+ParameterName35=Datasheet Link
+ParameterUpdate35=1
+ParameterName36=Datasheet URL
+ParameterUpdate36=1
+ParameterName37=Datasheet Version
+ParameterUpdate37=1
+ParameterName38=Datasheet2
+ParameterUpdate38=1
+ParameterName39=Depth
+ParameterUpdate39=1
+ParameterName40=Description
+ParameterUpdate40=1
+ParameterName41=Description 1
+ParameterUpdate41=1
+ParameterName42=Device Class L1
+ParameterUpdate42=1
+ParameterName43=Device Class L2
+ParameterUpdate43=1
+ParameterName44=Device Class L3
+ParameterUpdate44=1
+ParameterName45=DeviceName
+ParameterUpdate45=1
+ParameterName46=DeviceSetName
+ParameterUpdate46=1
+ParameterName47=Digikey Description
+ParameterUpdate47=1
+ParameterName48=DK PN
+ParameterUpdate48=1
+ParameterName49=Electromechanical Life
+ParameterUpdate49=1
+ParameterName50=Features
+ParameterUpdate50=1
+ParameterName51=Flammability Rating
+ParameterUpdate51=1
+ParameterName52=GateName_1
+ParameterUpdate52=1
+ParameterName53=Gender
+ParameterUpdate53=1
+ParameterName54=Height
+ParameterUpdate54=1
+ParameterName55=Height - Seated (Max)
+ParameterUpdate55=1
+ParameterName56=Housing Colour
+ParameterUpdate56=1
+ParameterName57=Housing Material
+ParameterUpdate57=1
+ParameterName58=Insulation Resistance
+ParameterUpdate58=1
+ParameterName59=Lead Free
+ParameterUpdate59=1
+ParameterName60=Lead Pitch
+ParameterUpdate60=1
+ParameterName61=Lead Spacing
+ParameterUpdate61=1
+ParameterName62=Lead Style
+ParameterUpdate62=1
+ParameterName63=Length
+ParameterUpdate63=1
+ParameterName64=Length - Lead Wire
+ParameterUpdate64=1
+ParameterName65=Library Reference
+ParameterUpdate65=1
+ParameterName66=LibraryName
+ParameterUpdate66=1
+ParameterName67=Manufacturer
+ParameterUpdate67=1
+ParameterName68=Manufacturer 1
+ParameterUpdate68=1
+ParameterName69=Manufacturer Part Number
+ParameterUpdate69=1
+ParameterName70=Manufacturer Part Number 1
+ParameterUpdate70=1
+ParameterName71=Manufacturer URL
+ParameterUpdate71=1
+ParameterName72=Manufacturer_Name
+ParameterUpdate72=1
+ParameterName73=Manufacturer_Part_Number
+ParameterUpdate73=1
+ParameterName74=Mating Post Length
+ParameterUpdate74=1
+ParameterName75=Max Operating Temperature
+ParameterUpdate75=1
+ParameterName76=Max Voltage Rating (AC)
+ParameterUpdate76=1
+ParameterName77=MF PN
+ParameterUpdate77=1
+ParameterName78=Min Operating Temperature
+ParameterUpdate78=1
+ParameterName79=Mount
+ParameterUpdate79=1
+ParameterName80=Mounting Technology
+ParameterUpdate80=1
+ParameterName81=Mounting Type
+ParameterUpdate81=1
+ParameterName82=Mouser Description
+ParameterUpdate82=1
+ParameterName83=Mouser Part Number
+ParameterUpdate83=1
+ParameterName84=Mouser Price/Stock
+ParameterUpdate84=1
+ParameterName85=Mouser2 Part Number
+ParameterUpdate85=1
+ParameterName86=Mouser2 Price/Stock
+ParameterUpdate86=1
+ParameterName87=Number of Contacts
+ParameterUpdate87=1
+ParameterName88=Number of Positions
+ParameterUpdate88=1
+ParameterName89=Number of Rows
+ParameterUpdate89=1
+ParameterName90=Octopart
+ParameterUpdate90=1
+ParameterName91=Operating Force
+ParameterUpdate91=1
+ParameterName92=Operating Temperature
+ParameterUpdate92=1
+ParameterName93=Orientation
+ParameterUpdate93=1
+ParameterName94=Package
+ParameterUpdate94=1
+ParameterName95=Package / Case
+ParameterUpdate95=1
+ParameterName96=Package Description
+ParameterUpdate96=1
+ParameterName97=Package Quantity
+ParameterUpdate97=1
+ParameterName98=Package Reference
+ParameterUpdate98=1
+ParameterName99=Packaging
+ParameterUpdate99=1
+ParameterName100=Part Status
+ParameterUpdate100=1
+ParameterName101=Pins
+ParameterUpdate101=1
+ParameterName102=Pitch
+ParameterUpdate102=1
+ParameterName103=PN
+ParameterUpdate103=1
+ParameterName104=Power
+ParameterUpdate104=1
+ParameterName105=Price
+ParameterUpdate105=1
+ParameterName106=Pricing 1
+ParameterUpdate106=1
+ParameterName107=Radiation Hardening
+ParameterUpdate107=1
+ParameterName108=Ratings
+ParameterUpdate108=1
+ParameterName109=REACH SVHC
+ParameterUpdate109=1
+ParameterName110=Resistance
+ParameterUpdate110=1
+ParameterName111=Resistance in Ohms @ 25°C
+ParameterUpdate111=1
+ParameterName112=Resistance Tolerance
+ParameterUpdate112=1
+ParameterName113=RoHS
+ParameterUpdate113=1
+ParameterName114=RoHS Compliant
+ParameterUpdate114=1
+ParameterName115=Size / Dimension
+ParameterUpdate115=1
+ParameterName116=Stock 1
+ParameterUpdate116=1
+ParameterName117=Supplier
+ParameterUpdate117=1
+ParameterName118=Supplier 1
+ParameterUpdate118=1
+ParameterName119=Supplier Part Number 1
+ParameterUpdate119=1
+ParameterName120=SymbolName_1
+ParameterUpdate120=1
+ParameterName121=Temperature
+ParameterUpdate121=1
+ParameterName122=Temperature Coefficient
+ParameterUpdate122=1
+ParameterName123=Temperature Range High
+ParameterUpdate123=1
+ParameterName124=Temperature Range Low
+ParameterUpdate124=1
+ParameterName125=Termination
+ParameterUpdate125=1
+ParameterName126=Termination Post Length
+ParameterUpdate126=1
+ParameterName127=Thickness (Max)
+ParameterUpdate127=1
+ParameterName128=Throw Configuration
+ParameterUpdate128=1
+ParameterName129=Tolerance
+ParameterUpdate129=1
+ParameterName130=URL
+ParameterUpdate130=1
+ParameterName131=Value
+ParameterUpdate131=1
+ParameterName132=Voltage - Rated
+ParameterUpdate132=1
+ParameterName133=Voltage Rating
+ParameterUpdate133=1
+ParameterName134=Voltage Rating Dc
+ParameterUpdate134=1
 ModelTypeGroup0=PCBLIB
 ModelTypeUpdate0=1
 ModelType0=PCBLIB
-ModelName0=CAPC1608X90X40LL10T20
+ModelName0=4POS_HEADER
 ModelUpdate0=1
 ModelType1=PCBLIB
-ModelName1=CAPC1608X90X40ML10T20
+ModelName1=6-TSSOP, SC-88, SOT-363
 ModelUpdate1=1
 ModelType2=PCBLIB
-ModelName2=CAPC1608X90X40NL10T20
+ModelName2=Ambient Light Sensor with I2C
 ModelUpdate2=1
 ModelType3=PCBLIB
-ModelName3=FCI-10103594-0001LF_V
+ModelName3=ANTC7020X90N
 ModelUpdate3=1
 ModelType4=PCBLIB
-ModelName4=RES 0603
+ModelName4=BAT_BK-82
 ModelUpdate4=1
+ModelType5=PCBLIB
+ModelName5=BMA280
+ModelUpdate5=1
+ModelType6=PCBLIB
+ModelName6=BME680
+ModelUpdate6=1
+ModelType7=PCBLIB
+ModelName7=CAPC0603
+ModelUpdate7=1
+ModelType8=PCBLIB
+ModelName8=CAPC0603(1608)100_L
+ModelUpdate8=1
+ModelType9=PCBLIB
+ModelName9=CAPC1608X90X40LL10T20
+ModelUpdate9=1
+ModelType10=PCBLIB
+ModelName10=CAPC1608X90X40ML10T20
+ModelUpdate10=1
+ModelType11=PCBLIB
+ModelName11=CAPC1608X90X40NL10T20
+ModelUpdate11=1
+ModelType12=PCBLIB
+ModelName12=CDBQR70HF
+ModelUpdate12=1
+ModelType13=PCBLIB
+ModelName13=CMWX1ZZABZ
+ModelUpdate13=1
+ModelType14=PCBLIB
+ModelName14=EXB34V103JV
+ModelUpdate14=1
+ModelType15=PCBLIB
+ModelName15=FCI-10103594-0001LF_V
+ModelUpdate15=1
+ModelType16=PCBLIB
+ModelName16=Ferrite Bead
+ModelUpdate16=1
+ModelType17=PCBLIB
+ModelName17=FP-PTS810SJM250SMTRLFS-MFG
+ModelUpdate17=1
+ModelType18=PCBLIB
+ModelName18=LED BLUE CLEAR [0603]
+ModelUpdate18=1
+ModelType19=PCBLIB
+ModelName19=LuminOx O2 Sensors
+ModelUpdate19=1
+ModelType20=PCBLIB
+ModelName20=RES 0603
+ModelUpdate20=1
+ModelType21=PCBLIB
+ModelName21=RESC0603
+ModelUpdate21=1
+ModelType22=PCBLIB
+ModelName22=RESC5025X88N
+ModelUpdate22=1
+ModelType23=PCBLIB
+ModelName23=RESC5025X88N - duplicate1
+ModelUpdate23=1
+ModelType24=PCBLIB
+ModelName24=SC-88
+ModelUpdate24=1
+ModelType25=PCBLIB
+ModelName25=Sensor housing 8-pin LGA
+ModelUpdate25=1
+ModelType26=PCBLIB
+ModelName26=SOP65P640X120-14N
+ModelUpdate26=1
+ModelType27=PCBLIB
+ModelName27=SOT-89 (MPT3)
+ModelUpdate27=1
+ModelType28=PCBLIB
+ModelName28=SOT95P280X145-3N
+ModelUpdate28=1
+ModelType29=PCBLIB
+ModelName29=SOT95P280X145-5N
+ModelUpdate29=1
+ModelType30=PCBLIB
+ModelName30=SOT95P280X145-6N
+ModelUpdate30=1
+ModelType31=PCBLIB
+ModelName31=TRM BLCK Pitch 5mm 2Pos
+ModelUpdate31=1
+ModelType32=PCBLIB
+ModelName32=U.FL-R-SMT-1
+ModelUpdate32=1
 
 [DatabaseUpdateOptions]
 SelectedOnly=0
