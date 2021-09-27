@@ -210,6 +210,23 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=SRREAZGK
 
+[Document11]
+DocumentPath=[8]Battery Managment.SchDoc
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=7
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=FFRJIWJV
+
 [ProjectVariant1]
 UniqueID=C9E8FD60-C759-4CB2-8099-C2133B6497A4
 Description=Variant of PCB_Project
