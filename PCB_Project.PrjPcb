@@ -75,6 +75,23 @@ GenerateClassCluster=0
 DocumentUniqueId=IQDHLDWG
 
 [Document3]
+DocumentPath=PCB_PROJECT.PcbDoc
+AnnotationEnabled=1
+AnnotateStartValue=1
+AnnotationIndexControlEnabled=0
+AnnotateSuffix=
+AnnotateScope=All
+AnnotateOrder=-1
+DoLibraryUpdate=1
+DoDatabaseUpdate=1
+ClassGenCCAutoEnabled=1
+ClassGenCCAutoRoomEnabled=1
+ClassGenNCAutoScope=None
+DItemRevisionGUID=
+GenerateClassCluster=0
+DocumentUniqueId=VQLSMMOE
+
+[Document4]
 DocumentPath=[1]MCU.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -91,7 +108,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=TIKADFCE
 
-[Document4]
+[Document5]
 DocumentPath=[2]Battery.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -108,7 +125,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=GOMNAPEK
 
-[Document5]
+[Document6]
 DocumentPath=[3]USB.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -125,7 +142,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=MPNXSMXW
 
-[Document6]
+[Document7]
 DocumentPath=[4]Button.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -142,7 +159,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=GFAAYDMJ
 
-[Document7]
+[Document8]
 DocumentPath=[5] Sensors.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -158,23 +175,6 @@ ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=MEVZNRXD
-
-[Document8]
-DocumentPath=PCB_PROJECT.PcbDoc
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=-1
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=VQLSMMOE
 
 [Document9]
 DocumentPath=[6]3-axis-accelerometer.SchDoc
