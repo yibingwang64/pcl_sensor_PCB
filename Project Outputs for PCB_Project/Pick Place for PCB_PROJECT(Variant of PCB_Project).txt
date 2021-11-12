@@ -1,0 +1,73 @@
+Altium Designer Pick and Place Locations
+C:\Users\RickWang\OneDrive - Latium Tech\Documents\GitHub\pcl_sensor_PCB\Project Outputs for PCB_Project\Pick Place for PCB_PROJECT(Variant of PCB_Project).txt
+
+========================================================================================================================
+File Design Information:
+
+Date:       10-11-21
+Time:       13:30
+Revision:   fbf7b2338e661e69927a8168d465f5802fed4f7b
+Variant:    Variant of PCB_Project
+Units used: mil
+
+Designator Comment                           Layer    Footprint                     Center-X(mil) Center-Y(mil) Rotation Description                                                                                   
+IC1        BME280                            TopLayer PSON65P250X250X100-8N         639.158mil    995.999mil    180      "Integrated Circuit"                                                                          
+FL8        BLM15AG102SN1D                    TopLayer BEADC1005X55N                 432.636mil    1159.646mil   180      "1 kOhms @ 100MHz 1 Ferrite Bead 0402 _1005 Metric_ 300mA 650mOhm"                            
+FL7        BLM15AG102SN1D                    TopLayer BEADC1005X55N                 505.254mil    1161.097mil   0        "1 kOhms @ 100MHz 1 Ferrite Bead 0402 _1005 Metric_ 300mA 650mOhm"                            
+FL6        BLM15AG102SN1D                    TopLayer BEADC1005X55N                 537.363mil    491.664mil    90       "1 kOhms @ 100MHz 1 Ferrite Bead 0402 _1005 Metric_ 300mA 650mOhm"                            
+C16        "CAP CER 330UF 4V X5R 1210"       TopLayer FP-GRM32E-0_3-IPC_B           822.652mil    253.782mil    0        "330µF ±20% 4V Ceramic Capacitor X5R 1210 (3225 Metric)"                                      
+R2         "Resistor 100k +/-1% 0402 63 mW"  TopLayer RESC1005X40X25ML05T05         327.489mil    511.787mil    90       "Chip Resistor, 100 KOhm, +/- 1%, 0.063 W, -55 to 155 degC, 0402 (1005 Metric)"               
+C14        2.2pf                             TopLayer CAPC0402                      590.551mil    2133.858mil   180      "04023J2R2ABSTR,  CAP CER 2.2PF 50V X7R 0402"                                                 
+RJ1        "Resistor 0R +/- 5% 0603 100 mW"  TopLayer RESC1608X55X25ML10T15         264.849mil    306.277mil    0        "Chip Resistor, 0 Ohm, 0.1 W, -55 to 155 degC, 0603 (1608 Metric)"                            
+FL3        BLM15AG102SN1D                    TopLayer BEADC1005X55N                 354.331mil    2166.850mil   270      "1 kOhms @ 100MHz 1 Ferrite Bead 0402 _1005 Metric_ 300mA 650mOhm"                            
+FL5        BLM15AG102SN1D                    TopLayer BEADC1005X55N                 833.150mil    874.016mil    0        "1 kOhms @ 100MHz 1 Ferrite Bead 0402 _1005 Metric_ 300mA 650mOhm"                            
+FL2        BLM15AG102SN1D                    TopLayer BEADC1005X55N                 138.224mil    1357.402mil   270      "1 kOhms @ 100MHz 1 Ferrite Bead 0402 _1005 Metric_ 300mA 650mOhm"                            
+FL1        BLM15AG102SN1D                    TopLayer BEADC1005X55N                 172.780mil    1359.702mil   270      "1 kOhms @ 100MHz 1 Ferrite Bead 0402 _1005 Metric_ 300mA 650mOhm"                            
+C4         "Capacitor 4.7µF +/-20% 10V 0603" TopLayer CAPC0603(1608)100_L           348.342mil    578.368mil    0        "Chip Capacitor, 4.7µF +/-20%, 10V, 0603, Thickness 1 mm"                                     
+R3         "Resistor 100k +/-1% 0402 63 mW"  TopLayer RESC1005X40X25ML05T05         580.114mil    492.476mil    90       "Chip Resistor, 100 KOhm, +/- 1%, 0.063 W, -55 to 155 degC, 0402 (1005 Metric)"               
+U3         CCS811B-JOPD500                   TopLayer SON60P400X270X110-11N         423.032mil    468.504mil    180      "LOW POWER DIGITAL SENSOR FOR IND"                                                            
+F1         "PTC 9V 500mA"                    TopLayer PTC_RESET_FUSE_9V_500MA_0805  696.862mil    85.661mil     270      "PTC RESET FUSE 9V 500MA 0805"                                                                
+C17        "CAP CER 330UF 4V X5R 1210"       TopLayer FP-GRM32E-0_3-IPC_B           822.835mil    437.008mil    0        "330µF ±20% 4V Ceramic Capacitor X5R 1210 (3225 Metric)"                                      
+C22        "Capacitor 100nF +/-20% 25V 0402" TopLayer CAPC0402(1005)60_L            86.614mil     901.575mil    270      "Chip Capacitor, 100nF +/-20%, 25V, 0402, Thickness 0.6 mm"                                   
+R12        KRL1220E-M-R100-F-T5              TopLayer RESC2012X70N                  149.606mil    303.150mil    0        "0.1 Ohm current sense resistor"                                                              
+R8         "Resistor 1k +/-1% 0402 100 mW"   TopLayer RESC1005X40X25ML05T05         226.971mil    898.516mil    270      "Chip Resistor, 1 KOhm, +/- 1%, 0.1 W, -55 to 155 degC, 0402 (1005 Metric)"                   
+R13        100R2F                            TopLayer RESC0402(1005)_L              125.984mil    387.795mil    90       "100R 0.063W 1% 0402 (1005 Metric)  SMD"                                                      
+R11        100R2F                            TopLayer RESC0402(1005)_L              163.386mil    386.811mil    90       "100R 0.063W 1% 0402 (1005 Metric)  SMD"                                                      
+R10        "Resistor 1k +/-1% 0402 100 mW"   TopLayer RESC1005X40X25ML05T05         188.976mil    960.630mil    90       "Chip Resistor, 1 KOhm, +/- 1%, 0.1 W, -55 to 155 degC, 0402 (1005 Metric)"                   
+R9         1MR2J                             TopLayer RESC0402(1005)_L              125.352mil    902.597mil    90       "1M 0.063W 5% 0402 (1005 Metric)  SMD"                                                        
+R7         "Resistor 100k +/-1% 0402 63 mW"  TopLayer RESC1005X40X25ML05T05         283.465mil    897.638mil    270      "Chip Resistor, 100 KOhm, +/- 1%, 0.063 W, -55 to 155 degC, 0402 (1005 Metric)"               
+IC3        BQ35100PW                         TopLayer SOP65P640X120-14N             185.039mil    685.039mil    270      "Integrated Circuit"                                                                          
+C26        "Capacitor 100nF +/-20% 25V 0402" TopLayer CAPC0402(1005)60_L            110.236mil    448.819mil    0        "Chip Capacitor, 100nF +/-20%, 25V, 0402, Thickness 0.6 mm"                                   
+C25        "Capacitor 1µF +/-20% 10V 0402"   TopLayer CAPC0402(1005)60_L            51.181mil     771.654mil    270      "Chip Capacitor, 1µF +/-20%, 10V, 0402, Thickness 0.6 mm"                                     
+C24        "Capacitor 100nF +/-20% 25V 0402" TopLayer CAPC0402(1005)60_L            145.669mil    496.063mil    0        "Chip Capacitor, 100nF +/-20%, 25V, 0402, Thickness 0.6 mm"                                   
+C23        "Capacitor 100nF +/-20% 25V 0402" TopLayer CAPC0402(1005)60_L            181.102mil    448.819mil    0        "Chip Capacitor, 100nF +/-20%, 25V, 0402, Thickness 0.6 mm"                                   
+C2         "Capacitor 100nF +/-20% 25V 0402" TopLayer CAPC0402(1005)60_L            634.784mil    907.165mil    90       "Chip Capacitor, 100nF +/-20%, 25V, 0402, Thickness 0.6 mm"                                   
+AC1        BMA400                            TopLayer BMA280                        465.322mil    1096.117mil   180      "BMA490L, 400, 280 Accelerometer"                                                             
+C21        "Capacitor 100nF +/-20% 25V 0402" TopLayer CAPC0402(1005)60_L            567.381mil    1104.024mil   180      "Chip Capacitor, 100nF +/-20%, 25V, 0402, Thickness 0.6 mm"                                   
+C20        "Capacitor 100nF +/-20% 25V 0402" TopLayer CAPC0402(1005)60_L            365.988mil    1087.301mil   0        "Chip Capacitor, 100nF +/-20%, 25V, 0402, Thickness 0.6 mm"                                   
+IC2        USBLC6-2SC6                       TopLayer SOT95P280X145-6N              421.260mil    665.354mil    0        "Integrated Circuit"                                                                          
+RN1        EXB34V220JX                       TopLayer EXB34V103JV                   586.614mil    665.354mil    270      "Resistor Network"                                                                            
+RESET      PTS810SJM250SMTRLFS               TopLayer FP-PTS810SJM250SMTRLFS-MFG    374.016mil    122.047mil    270      "SWITCH TACTILE SPST-NO 0.05A 16V"                                                            
+J1         10103594-0001LF                   TopLayer FCI-10103594-0001LF_V         763.779mil    681.102mil    90       "Micro USB 2.0 B Receptacle, 5 Position, Height 3.24 mm, -55 to 85 degC, RoHS, Tape and Reel" 
+CONN1      U.FL-R-SMT-1                      TopLayer U.FL-R-SMT-1                  812.500mil    2141.732mil   270      U.FL-R-SMT-1                                                                                  
+C19        "Capacitor 100nF +/-20% 25V 0402" TopLayer CAPC0402(1005)60_L            267.716mil    74.803mil     270      "Chip Capacitor, 100nF +/-20%, 25V, 0402, Thickness 0.6 mm"                                   
+C18        "Capacitor 1µF +/-20% 10V 0402"   TopLayer CAPC0402(1005)60_L            667.635mil    379.536mil    0        "Chip Capacitor, 1µF +/-20%, 10V, 0402, Thickness 0.6 mm"                                     
+C11        "Capacitor 100nF +/-20% 25V 0402" TopLayer CAPC0402(1005)60_L            503.937mil    1539.049mil   90       "Chip Capacitor, 100nF +/-20%, 25V, 0402, Thickness 0.6 mm"                                   
+C10        "Capacitor 1µF +/-20% 10V 0402"   TopLayer CAPC0402(1005)60_L            539.370mil    1540.033mil   90       "Chip Capacitor, 1µF +/-20%, 10V, 0402, Thickness 0.6 mm"                                     
+C9         "Capacitor 10µF +/-40% 6.3V 0402" TopLayer CAPC0402(1005)60_L            578.740mil    1540.033mil   90       "Chip Capacitor, 10µF +/-40%, 6.3V, 0402, Thickness 0.6 mm"                                   
+BOOT       PTS810SJM250SMTRLFS               TopLayer FP-PTS810SJM250SMTRLFS-MFG    555.118mil    122.047mil    270      "SWITCH TACTILE SPST-NO 0.05A 16V"                                                            
+U2         VEML7700-TR                       TopLayer Ambient_Light_Sensor_with_I2C 211.583mil    1117.198mil   0        "VEML7700-TR, Ambient Light Sensor with I2C"                                                  
+U1         TYPEABZ                           TopLayer CMWX1ZZABZ                    500.000mil    1838.583mil   90       CMWX1ZZABZ-078                                                                                
+R4         "Resistor 4K7  +/-1 % 0402 63 mW" TopLayer RESC0402(1005)_L              299.213mil    2169.291mil   90       "Chip Resistor, 4,7 kOhms, +/-1 %, 63 mW, -55 to 155 degC, 0402"                              
+R6         10K                               TopLayer RESC0402                      220.472mil    1826.772mil   0        "RES SMD 10K OHM 1% 1/16W 0402"                                                               
+R5         "Resistor 4K7  +/-1 % 0402 63 mW" TopLayer RESC0402(1005)_L              248.031mil    2169.291mil   90       "Chip Resistor, 4,7 kOhms, +/-1 %, 63 mW, -55 to 155 degC, 0402"                              
+R1         "Resistor 4K7  +/-1 % 0402 63 mW" TopLayer RESC0402(1005)_L              153.543mil    1905.512mil   0        "Chip Resistor, 4,7 kOhms, +/-1 %, 63 mW, -55 to 155 degC, 0402"                              
+D1         APHD1608LQBC/D                    TopLayer LED_BLUE_CLEAR_[0603]         133.858mil    1992.126mil   90       "LED BLUE CLEAR 0603 SMD"                                                                     
+C13        "Capacitor 1µF +/-20% 10V 0402"   TopLayer CAPC0402(1005)60_L            401.994mil    2166.890mil   90       "Chip Capacitor, 1µF +/-20%, 10V, 0402, Thickness 0.6 mm"                                     
+C12        0.01UF                            TopLayer CAPC0402                      452.756mil    2161.417mil   270      "CAP CER 10000PF 50V X7R 0402"                                                                
+C1         "Capacitor 1µF +/-20% 10V 0402"   TopLayer CAPC0402(1005)60_L            201.540mil    1264.072mil   180      "Chip Capacitor, 1µF +/-20%, 10V, 0402, Thickness 0.6 mm"                                     
+C3         "Capacitor 100nF +/-20% 25V 0402" TopLayer CAPC0402(1005)60_L            737.719mil    956.874mil    180      "Chip Capacitor, 100nF +/-20%, 25V, 0402, Thickness 0.6 mm"                                   
+C7         "Capacitor 10µF +/-40% 6.3V 0402" TopLayer CAPC0402(1005)60_L            412.485mil    1537.097mil   90       "Chip Capacitor, 10µF +/-40%, 6.3V, 0402, Thickness 0.6 mm"                                   
+C8         "Capacitor 100nF +/-20% 25V 0402" TopLayer CAPC0402(1005)60_L            448.860mil    1537.839mil   90       "Chip Capacitor, 100nF +/-20%, 25V, 0402, Thickness 0.6 mm"                                   
+C6         "Capacitor 100nF +/-20% 25V 0402" TopLayer CAPC0402(1005)60_L            314.961mil    1531.496mil   90       "Chip Capacitor, 100nF +/-20%, 25V, 0402, Thickness 0.6 mm"                                   
+C5         "Capacitor 10µF +/-40% 6.3V 0402" TopLayer CAPC0402(1005)60_L            279.528mil    1531.496mil   90       "Chip Capacitor, 10µF +/-40%, 6.3V, 0402, Thickness 0.6 mm"                                   
