@@ -233,20 +233,56 @@ Description=Variant of PCB_Project
 AllowFabrication=0
 ParameterCount=1
 VariationCount=5
-Variation1=Designator=SWD2|UniqueId=\TRRGKJNY|Kind=1|AlternatePart= 
-Variation2=Designator=SWD1|UniqueId=\TVNEUTGC|Kind=1|AlternatePart= 
-Variation3=Designator=FB5|UniqueId=\XQDKJPOP|Kind=1|AlternatePart= 
-Variation4=Designator=FB6|UniqueId=\XQQUQOBC|Kind=1|AlternatePart= 
-Variation5=Designator=BT|UniqueId=\LBFONBRQ|Kind=1|AlternatePart= 
-ParamVariationCount=0
+Variation1=Designator=BT1|UniqueId=\LBFONBRQ|Kind=1|AlternatePart= 
+Variation2=Designator=C15|UniqueId=\CDIXCSLG|Kind=1|AlternatePart= 
+Variation3=Designator=C14|UniqueId=\HHGXJUWI|Kind=1|AlternatePart= 
+Variation4=Designator=FL4|UniqueId=\EHWNVHLG|Kind=2|AlternatePart=Resistor 0R +/- 5% 0402 63 mW|AltLibLink_LibIdentifierKind=Library Full Path|AltLibLink_LibraryIdentifier=Latium Technologies|AltLibLink_SymbolReference=CMP-009-00003-5|AltLibLink_DesignItemID=CMP-009-00003-5|AltLibLink_UseLibraryName=True|AltLibLink_SourceLibraryName=Latium Technologies|AltLibLink_UseDBTableName=False|AltLibLink_DatabaseTableName= |AltLibLink_VaultGUID=6707D624-2B42-4187-8AE6-CCD2A956A7AD|AltLibLink_ItemGUID=B5915D9D-22EB-497E-86D0-41C044069AE0|AltLibLink_RevisionGUID=8BDEA1FE-78F0-460F-A0E3-CFC5EC4AF0FD|AltLibLink_Footprint=RESC1005X40X25ML05T05|AltLibLink_IsSameFootprint=False
+ParamVariation1=ParameterName=Comment|VariantValue=Resistor 0R +/- 5% 0402 63 mW
+ParamDesignator1=FL4
+ParamVariation2=ParameterName=Case/Package|VariantValue=0402
+ParamDesignator2=FL4
+ParamVariation3=ParameterName=Component Kind|VariantValue=Standard
+ParamDesignator3=FL4
+ParamVariation4=ParameterName=Description|VariantValue=Chip Resistor, 0 Ohm, +/- 5%, 63 mW, -55 to 155 degC, 0402 (1005 Metric)
+ParamDesignator4=FL4
+ParamVariation5=ParameterName=Footprint|VariantValue=RESC1005X40X25ML05T05
+ParamDesignator5=FL4
+ParamVariation6=ParameterName=Ibis Model|VariantValue= 
+ParamDesignator6=FL4
+ParamVariation7=ParameterName=Library Reference|VariantValue=CMP-009-00003-5
+ParamDesignator7=FL4
+ParamVariation8=ParameterName=Max Operating Temperature|VariantValue=155°C
+ParamDesignator8=FL4
+ParamVariation9=ParameterName=Min Operating Temperature|VariantValue=-55°C
+ParamDesignator9=FL4
+ParamVariation10=ParameterName=Mounting Technology|VariantValue=SM
+ParamDesignator10=FL4
+ParamVariation11=ParameterName=PCB3D|VariantValue= 
+ParamDesignator11=FL4
+ParamVariation12=ParameterName=Pin Info|VariantValue= 
+ParamDesignator12=FL4
+ParamVariation13=ParameterName=Pins|VariantValue=2
+ParamDesignator13=FL4
+ParamVariation14=ParameterName=Power|VariantValue=63mW
+ParamDesignator14=FL4
+ParamVariation15=ParameterName=RoHS Compliant|VariantValue=True
+ParamDesignator15=FL4
+ParamVariation16=ParameterName=Signal Integrity|VariantValue= 
+ParamDesignator16=FL4
+ParamVariation17=ParameterName=Simulation|VariantValue= 
+ParamDesignator17=FL4
+ParamVariation18=ParameterName=Tolerance|VariantValue=5%
+ParamDesignator18=FL4
+ParamVariation19=ParameterName=Value|VariantValue=0
+ParamDesignator19=FL4
+ParamVariation20=ParameterName=Voltage Rating|VariantValue=50V
+ParamDesignator20=FL4
+Variation5=Designator=E1|UniqueId=\KEZFWBUW|Kind=1|AlternatePart= 
+ParamVariationCount=20
 
 [Parameter2_1]
 Name=No pin connection
 Value=
-
-[GeneratedDocument1]
-DocumentPath=Project Outputs for PCB_Project\Design Rule Check - PCB_PROJECT.html
-DItemRevisionGUID=
 
 [Configuration1]
 Name=Sources
@@ -300,7 +336,7 @@ OutputDir=
 [OutputGroup1]
 Name=Netlist Outputs
 Description=
-TargetPrinter=RICOH MP C407 [58387912F832]
+TargetPrinter=RICOH MP C407
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 OutputType1=CadnetixNetlist
 OutputName1=Cadnetix Netlist
@@ -406,7 +442,7 @@ OutputDefault20=0
 [OutputGroup2]
 Name=Simulator Outputs
 Description=
-TargetPrinter=RICOH MP C407 [58387912F832]
+TargetPrinter=RICOH MP C407
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 
 [OutputGroup3]
@@ -532,7 +568,7 @@ PageOptions11=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|Print
 [OutputGroup4]
 Name=Assembly Outputs
 Description=
-TargetPrinter=RICOH MP C407 [58387912F832]
+TargetPrinter=RICOH MP C407
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 OutputType1=Test Points For Assembly
 OutputName1=Test Point Report
@@ -714,7 +750,7 @@ Configuration3_Item78=CArc=Full|CFill=Full|Comment=Full|Coordinate=Full|CPad=Ful
 [OutputGroup5]
 Name=Fabrication Outputs
 Description=
-TargetPrinter=RICOH MP C407 [58387912F832]
+TargetPrinter=RICOH MP C407
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 OutputType1=NC Drill
 OutputName1=NC Drill Files
@@ -1760,7 +1796,7 @@ Configuration12_Item2=AddToAllLayerClasses.Set= |AddToAllPlots.Set=SerializeLaye
 [OutputGroup6]
 Name=Report Outputs
 Description=
-TargetPrinter=RICOH MP C407 [58387912F832]
+TargetPrinter=RICOH MP C407
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 OutputType1=BOM_PartType
 OutputName1=Bill of Materials
@@ -1823,7 +1859,7 @@ PageOptions8=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|PrintS
 [OutputGroup7]
 Name=Other Outputs
 Description=
-TargetPrinter=RICOH MP C407 [58387912F832]
+TargetPrinter=RICOH MP C407
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 OutputType1=Text Print
 OutputName1=Text Print
@@ -1931,7 +1967,7 @@ PageOptions17=Record=PageOptions|CenterHorizontal=True|CenterVertical=True|Print
 [OutputGroup8]
 Name=Validation Outputs
 Description=
-TargetPrinter=RICOH MP C407 [58387912F832]
+TargetPrinter=RICOH MP C407
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 OutputType1=BOM_Violations
 OutputName1=BOM Checks Report
@@ -1975,7 +2011,7 @@ OutputDefault7=0
 [OutputGroup9]
 Name=Export Outputs
 Description=
-TargetPrinter=RICOH MP C407 [58387912F832]
+TargetPrinter=RICOH MP C407
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 OutputType1=AutoCAD dwg/dxf PCB
 OutputName1=AutoCAD dwg/dxf File PCB
@@ -2036,7 +2072,7 @@ OutputDefault11=0
 [OutputGroup10]
 Name=PostProcess Outputs
 Description=
-TargetPrinter=RICOH MP C407 [58387912F832]
+TargetPrinter=RICOH MP C407
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 OutputType1=Copy Files
 OutputName1=Copy Files
