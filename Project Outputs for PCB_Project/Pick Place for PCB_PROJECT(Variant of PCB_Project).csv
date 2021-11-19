@@ -4,20 +4,20 @@ C:\Users\RickWang\OneDrive - Latium Tech\Documents\GitHub\pcl_sensor_PCB\Project
 ========================================================================================================================
 File Design Information:
 
-Date:       10-11-21
-Time:       13:30
-Revision:   fbf7b2338e661e69927a8168d465f5802fed4f7b
+Date:       16-11-21
+Time:       13:56
+Revision:   0b868e393278ebaeef62984f6e6e16cbff58ace2
 Variant:    Variant of PCB_Project
 Units used: mil
 
 "Designator","Comment","Layer","Footprint","Center-X(mil)","Center-Y(mil)","Rotation","Description"
+"FL4","Resistor 0R +/- 5% 0402 63 mW","TopLayer","RESC1005X40X25ML05T05","1015.739mil","110.228mil","90","Chip Resistor, 0 Ohm, +/- 5%, 63 mW, -55 to 155 degC, 0402 (1005 Metric)"
 "IC1","BME280","TopLayer","PSON65P250X250X100-8N","639.158mil","995.999mil","180","Integrated Circuit"
 "FL8","BLM15AG102SN1D","TopLayer","BEADC1005X55N","432.636mil","1159.646mil","180","1 kOhms @ 100MHz 1 Ferrite Bead 0402 _1005 Metric_ 300mA 650mOhm"
 "FL7","BLM15AG102SN1D","TopLayer","BEADC1005X55N","505.254mil","1161.097mil","0","1 kOhms @ 100MHz 1 Ferrite Bead 0402 _1005 Metric_ 300mA 650mOhm"
 "FL6","BLM15AG102SN1D","TopLayer","BEADC1005X55N","537.363mil","491.664mil","90","1 kOhms @ 100MHz 1 Ferrite Bead 0402 _1005 Metric_ 300mA 650mOhm"
 "C16","CAP CER 330UF 4V X5R 1210","TopLayer","FP-GRM32E-0_3-IPC_B","822.652mil","253.782mil","0","330µF ±20% 4V Ceramic Capacitor X5R 1210 (3225 Metric)"
 "R2","Resistor 100k +/-1% 0402 63 mW","TopLayer","RESC1005X40X25ML05T05","327.489mil","511.787mil","90","Chip Resistor, 100 KOhm, +/- 1%, 0.063 W, -55 to 155 degC, 0402 (1005 Metric)"
-"C14","2.2pf","TopLayer","CAPC0402","590.551mil","2133.858mil","180","04023J2R2ABSTR,  CAP CER 2.2PF 50V X7R 0402"
 "RJ1","Resistor 0R +/- 5% 0603 100 mW","TopLayer","RESC1608X55X25ML10T15","264.849mil","306.277mil","0","Chip Resistor, 0 Ohm, 0.1 W, -55 to 155 degC, 0603 (1608 Metric)"
 "FL3","BLM15AG102SN1D","TopLayer","BEADC1005X55N","354.331mil","2166.850mil","270","1 kOhms @ 100MHz 1 Ferrite Bead 0402 _1005 Metric_ 300mA 650mOhm"
 "FL5","BLM15AG102SN1D","TopLayer","BEADC1005X55N","833.150mil","874.016mil","0","1 kOhms @ 100MHz 1 Ferrite Bead 0402 _1005 Metric_ 300mA 650mOhm"
@@ -42,9 +42,9 @@ Units used: mil
 "C24","Capacitor 100nF +/-20% 25V 0402","TopLayer","CAPC0402(1005)60_L","145.669mil","496.063mil","0","Chip Capacitor, 100nF +/-20%, 25V, 0402, Thickness 0.6 mm"
 "C23","Capacitor 100nF +/-20% 25V 0402","TopLayer","CAPC0402(1005)60_L","181.102mil","448.819mil","0","Chip Capacitor, 100nF +/-20%, 25V, 0402, Thickness 0.6 mm"
 "C2","Capacitor 100nF +/-20% 25V 0402","TopLayer","CAPC0402(1005)60_L","634.784mil","907.165mil","90","Chip Capacitor, 100nF +/-20%, 25V, 0402, Thickness 0.6 mm"
-"AC1","BMA400","TopLayer","BMA280","465.322mil","1096.117mil","180","BMA490L, 400, 280 Accelerometer"
+"AC1","BMA400","TopLayer","BMA280","465.322mil","1096.117mil","180","BMA400  Accelerometer"
 "C21","Capacitor 100nF +/-20% 25V 0402","TopLayer","CAPC0402(1005)60_L","567.381mil","1104.024mil","180","Chip Capacitor, 100nF +/-20%, 25V, 0402, Thickness 0.6 mm"
-"C20","Capacitor 100nF +/-20% 25V 0402","TopLayer","CAPC0402(1005)60_L","365.988mil","1087.301mil","0","Chip Capacitor, 100nF +/-20%, 25V, 0402, Thickness 0.6 mm"
+"C20","Capacitor 100nF +/-20% 25V 0402","TopLayer","CAPC0402(1005)60_L","376.021mil","1057.753mil","90","Chip Capacitor, 100nF +/-20%, 25V, 0402, Thickness 0.6 mm"
 "IC2","USBLC6-2SC6","TopLayer","SOT95P280X145-6N","421.260mil","665.354mil","0","Integrated Circuit"
 "RN1","EXB34V220JX","TopLayer","EXB34V103JV","586.614mil","665.354mil","270","Resistor Network"
 "RESET","PTS810SJM250SMTRLFS","TopLayer","FP-PTS810SJM250SMTRLFS-MFG","374.016mil","122.047mil","270","SWITCH TACTILE SPST-NO 0.05A 16V"
