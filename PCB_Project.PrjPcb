@@ -522,14 +522,6 @@ DItemRevisionGUID=
 DocumentPath=Project Outputs for PCB_Project\PCB_PROJECT.RUL
 DItemRevisionGUID=
 
-[GeneratedDocument52]
-DocumentPath=Project Outputs for PCB_Project\Pick Place for PCB_PROJECT(Variant of PCB_Project).csv
-DItemRevisionGUID=
-
-[GeneratedDocument53]
-DocumentPath=Project Outputs for PCB_Project\Pick Place for PCB_PROJECT(Variant of PCB_Project).txt
-DItemRevisionGUID=
-
 [Configuration1]
 Name=Sources
 ParameterCount=0
@@ -688,7 +680,7 @@ OutputDefault20=0
 [OutputGroup2]
 Name=Simulator Outputs
 Description=
-TargetPrinter=RICOH MP C407
+TargetPrinter=RICOH MP C3504ex [58387912A8F6]
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 
 [OutputGroup3]
