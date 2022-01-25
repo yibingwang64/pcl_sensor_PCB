@@ -1,0 +1,582 @@
+<html>
+<head>
+<META http-equiv="Content-Type" content="text/html">
+<style type="text/css">
+		h1, h2, h3, h4, h5, h6 {
+			font-family : segoe ui;
+			color : black;
+			background-color : #EDE7D9;
+			padding: 0.3em;
+		}
+
+		h1 {
+			font-size: 1.2em;
+		}		
+
+		h2 {
+			font-size: 1.2em;
+		}
+
+		body {
+			font-family : segoe ui;
+		}
+
+		td, th {
+			padding: 0.5em;
+			text-align : left;
+			width: 10em;
+		}
+		th {
+			background-color : #EEEEEE;
+
+		}
+		th.column1, td.column1 {
+			text-align: left;
+			width : auto;
+		}
+		table {
+			width : 100%;
+			font-size: 0.9em;
+		}
+
+		.DRC_summary_header {
+			padding-bottom : 0.1em;
+			border : 0px solid black;
+			width: 100%;
+			align: left;
+		}
+
+		.DRC_summary_header_col1,
+		.DRC_summary_header_col2, 
+		.DRC_summary_header_col3 {
+			color : black;
+			font-size:100%;
+			padding : 0em;
+			padding-top : 0.2em;
+			padding-bottom 0.2em;
+			border : 0px solid black;
+			vertical-align: top;
+			text-align: left;
+		}
+
+		.DRC_summary_header_col1 {
+			font-weight: bold;
+			width: 8em;
+		}
+
+		.DRC_summary_header_col2 {
+			width: 0.1em;
+		
+		}
+
+		.DRC_summary_header_col3 {
+			width : auto;
+		}
+
+		.header_holder {
+		    Width = 100%;
+		    border = 0px solid green;
+		    padding = 0;
+		}
+
+
+		.front_matter, .front_matter_column1, .front_matter_column2, .front_matter_column3
+		{
+			left : 0;
+			top : 0;
+			padding: 0em;
+			padding-top : 0.1em;
+			border : 0px solid black;
+			width : 100%;
+			vertical-align: top;
+			text-align: left;
+		}
+
+		.front_matter_column1 {
+			width : 8em;
+			font-weight: bold;
+		}
+
+		.front_matter_column2 {
+			width: 0.1em;
+		}
+
+		.front_matter_column3 {
+			width : auto;
+		}
+
+		.total_column1, .total_column {
+			font-weight : bold;
+		}
+		.total_column1 {
+			text-align : left;
+		}
+		.warning, .error {
+			color : red;
+			font-weight : bold;
+		}
+		tr.onmouseout_odd {
+			background-color : #white;
+		}
+		tr.onmouseout_even { 
+			background-color : #FAFAFA;
+		}
+		tr.onmouseover_odd, tr.onmouseover_even { 
+			background-color : #EEEEEE;
+		} 
+		a:link, a:visited, .q a:link,.q a:active,.q {
+			color: #21489e; 
+		}
+		a:link.callback, a:visited.callback { 
+			color: #21489e;
+		}
+		a:link.customize, a:visited.customize {
+			color: #C0C0C0;
+			position: absolute; 
+			right: 10px;
+		}	
+		p.contents_level1 {
+			font-weight : bold;
+			font-size : 110%;
+			margin : 0.5em;
+		}
+		p.contents_level2 {
+			position : relative;
+			left : 20px;
+			margin : 0.5em;
+		}
+	</style><script type="text/javascript">
+		function coordToMils(coord) {
+			var number = coord / 10000;
+			
+			if (number != number.toFixed(3))
+				number = number.toFixed(3);
+
+			return number + 'mil'
+		}
+
+		function coordToMM(coord) {
+			var number = 0.0254 * coord / 10000;
+			
+			if (number != number.toFixed(4))
+				number = number.toFixed(4);
+			
+			return number + 'mm'
+		}
+	
+		function convertCoord(coordNode, units) {
+			for (var i = 0; i < coordNode.childNodes.length; i++) {
+				coordNode.removeChild(coordNode.childNodes[i]);
+			}
+
+			var coord = coordNode.getAttribute('value');
+			if (coord != null) {
+				if (units == 'mm') {
+					textNode = document.createTextNode(coordToMM(coord));
+					coordNode.appendChild(textNode);
+				} else if (units == 'mil') {
+					textNode = document.createTextNode(coordToMils(coord));		
+					coordNode.appendChild(textNode);	
+				}
+			}
+		}
+	
+		function convertUnits(unitNode, units) {
+			for (var i = 0; i < unitNode.childNodes.length; i++) {
+				unitNode.removeChild(unitNode.childNodes[i]);		
+			}
+		
+			textNode = document.createTextNode(units); 
+			unitNode.appendChild(textNode);
+		}
+	
+		function changeUnits(radio_input, units) {
+			if (radio_input.checked) {
+			
+				var elements = document.getElementsByName('coordinate');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertCoord(elements[i], units);
+					}
+				}
+	
+				var elements = document.getElementsByName('units');
+				if (elements) {
+					for (var i = 0; i < elements.length; i++) {
+						convertUnits(elements[i], units);
+					}
+				}
+			}
+		}
+	</script><title>Design Rule Verification Report</title>
+</head>
+<body onload=""><img ALT="Altium" src="
+			file://C:\Users\Public\Documents\Altium\AD19\Templates\AD_logo.png
+		"><h1>Design Rule Verification Report</h1>
+<table class="header_holder">
+<td class="column1">
+<table class="front_matter">
+<tr class="front_matter">
+<td class="front_matter_column1">Date:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">2022-01-25</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">10:13:14 AM</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Elapsed Time:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3">00:00:01</td>
+</tr>
+<tr class="front_matter">
+<td class="front_matter_column1">Filename:</td>
+<td class="front_matter_column2"></td>
+<td class="front_matter_column3"><a href="file:///C:\Users\RickWang\OneDrive - Latium Tech\Documents\GitHub\pcl_sensor_PCB\PCL_PCB.PcbDoc" class="file"><acronym title="C:\Users\RickWang\OneDrive - Latium Tech\Documents\GitHub\pcl_sensor_PCB\PCL_PCB.PcbDoc">C:\Users\RickWang\OneDrive - Latium Tech\Documents\GitHub\pcl_sensor_PCB\PCL_PCB.PcbDoc</acronym></a></td>
+</tr>
+</table>
+</td>
+<td class="column2">
+<table class="DRC_summary_header">
+<tr>
+<td class="DRC_summary_header_col1">Warnings:</td>
+<td class="DRC_summary_header_col2"></td>
+<td class="DRC_summary_header_col3">0</td></tr>
+<tr>
+<td class="DRC_summary_header_col1">Rule Violations:</td>
+<td class="DRC_summary_header_col2"></td>
+<td class="DRC_summary_header_col3" style="color : red">82</td></tr>
+</table>
+</td>
+</table><a name="IDXSR5UDN2YZZ3JJQQPROMMHUYWH4WHYMXHWNTOLIAP5Y0JFLX5AAB"><h2>Summary</h2></a><table>
+<tr>
+<th class="column1">Warnings</th>
+<th class="column2">Count</th>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">0</td>
+</tr>
+</table><br><table>
+<tr>
+<th class="column1">Rule Violations</th>
+<th class="column2">Count</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDJ05P3QPVL05XCFG0Z34R3GBSPHO4KYJ4EFN0Z5DVU425STXCGDOP">Clearance Constraint (Gap=0.203mm) (All),(All)</a></td>
+<td class="column2">81</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDELNE0B2AC2QIOI3YXR1WQHOKLYNMRS54XTU0BEKUIVZJ4SSEJJK">Short-Circuit Constraint (Allowed=No) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDM3ABNBUM1NFDBLMQNEMJETEIRM2UKPME4OUEODGVAZHYFXMJZE3G">Un-Routed Net Constraint ( (All) )</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDQ2J430Y5MORYC2E5CSNQMDYGBN5F3BGHN4IL0TE0FDF5GSTV5ZBM">Modified Polygon (Allow modified: No), (Allow shelved: No)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDT5TSFJXES1CGIWZKCFJR5EHGYHMBFF325STPLEECOXJUYZHBKFK">Width Constraint (Min=0.203mm) (Max=3.556mm) (Preferred=0.25mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#ID52JEGAUQNRTPMAING2W1FS1VJLJGTIVENI4AN2LADRC2BRCSCDOJ">Power Plane Connect Rule(Relief Connect )(Expansion=0.508mm) (Conductor Width=0.254mm) (Air Gap=0.254mm) (Entries=4) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#ID5KXRMGYIVM5LNIRYY4GT0JYVGYSGSKSO1OEHHON1PLC1ZTMPTKI">Hole Size Constraint (Min=0.025mm) (Max=10.16mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDUNKEBZEVAGC5LQGVYHDDDVZTKDZ441VEIC23JSGJNWXSQSIOGXJ">Hole To Hole Clearance (Gap=0.254mm) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDEKSADY5G02CQCNTFHK51YJKVRLTQL0E3WKDSI5E4KVWWYBFBE5LH">Minimum Solder Mask Sliver (Gap=0.015mm) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDD52FIA3PVWTPBCDSUFS1TRDDZCLHBQNRN5ECVZCDBLUX0VIVINRC">Silk To Solder Mask (Clearance=0mm) (IsPad),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#ID5KE3SO535SYQNDRYOLIZQUX50JYSKOXCQYFC03PVXAA5GVS2MJII">Silk to Silk (Clearance=0.102mm) (All),(All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDUF5R55QOQ3PYBA2STCVYOAEVROVZPJUDJKW05JHZFJ4D1JWQKXKN">Net Antennae (Tolerance=0mm) (All)</a></td>
+<td class="column2">1</td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="#IDO512TVZMMZI4M2CGWJ0MIG0MUMVFGUGFHINMCFFOWMHV4XPFWOH">Board Clearance Constraint (Gap=0mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="#IDYVFDPXVBNPB0PIFPNAL25JIPUPNI2VOVIEV2CHAN0TG2MQAADBI">Height Constraint (Min=0mm) (Max=25.4mm) (Prefered=12.7mm) (All)</a></td>
+<td class="column2">0</td>
+</tr>
+<tr>
+<td style="font-weight : bold; text-align : right" class="column1">Total</td>
+<td style="font-weight : bold" class="column2">82</td>
+</tr>
+</table><br><a name="IDJ05P3QPVL05XCFG0Z34R3GBSPHO4KYJ4EFN0Z5DVU425STXCGDOP"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Clearance Constraint (Gap=0.203mm) (All),(All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\RickWang\OneDrive - Latium Tech\Documents\GitHub\pcl_sensor_PCB\PCL_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5015.456mil|Location2.X=5021.789mil|Location1.Y=5028.329mil|Location2.Y=5034.663mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\RickWang\OneDrive - Latium Tech\Documents\GitHub\pcl_sensor_PCB\PCL_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5015.456mil|Location2.X=5021.789mil|Location1.Y=5028.329mil|Location2.Y=5034.663mil|Absolute=True">Clearance Constraint: (Collision &lt; 0.203mm) Between Area Fill (38.7mm,20.3mm) (53.4mm,46.2mm) on Top Layer And Pad E1-1(42.8mm,25mm) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\RickWang\OneDrive - Latium Tech\Documents\GitHub\pcl_sensor_PCB\PCL_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4859.038mil|Location2.X=4865.371mil|Location1.Y=5075.574mil|Location2.Y=5081.907mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\RickWang\OneDrive - Latium Tech\Documents\GitHub\pcl_sensor_PCB\PCL_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4859.038mil|Location2.X=4865.371mil|Location1.Y=5075.574mil|Location2.Y=5081.907mil|Absolute=True">Clearance Constraint: (Collision &lt; 0.203mm) Between Area Fill (38.7mm,20.3mm) (53.4mm,46.2mm) on Top Layer And Track (37.325mm,26.2mm)(41.1mm,26.2mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\RickWang\OneDrive - Latium Tech\Documents\GitHub\pcl_sensor_PCB\PCL_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4954.565mil|Location2.X=4960.898mil|Location1.Y=5436.74mil|Location2.Y=5443.073mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\RickWang\OneDrive - Latium Tech\Documents\GitHub\pcl_sensor_PCB\PCL_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4954.565mil|Location2.X=4960.898mil|Location1.Y=5436.74mil|Location2.Y=5443.073mil|Absolute=True">Clearance Constraint: (Collision &lt; 0.203mm) Between Area Fill (38.7mm,20.3mm) (53.4mm,46.2mm) on Top Layer And Track (41.126mm,35.374mm)(41.2mm,35.374mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\RickWang\OneDrive - Latium Tech\Documents\GitHub\pcl_sensor_PCB\PCL_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4953.526mil|Location2.X=4959.859mil|Location1.Y=5075.574mil|Location2.Y=5081.907mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\RickWang\OneDrive - Latium Tech\Documents\GitHub\pcl_sensor_PCB\PCL_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4953.526mil|Location2.X=4959.859mil|Location1.Y=5075.574mil|Location2.Y=5081.907mil|Absolute=True">Clearance Constraint: (Collision &lt; 0.203mm) Between Area Fill (38.7mm,20.3mm) (53.4mm,46.2mm) on Top Layer And Track (41.1mm,26.2mm)(42.7mm,26.2mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\RickWang\OneDrive - Latium Tech\Documents\GitHub\pcl_sensor_PCB\PCL_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4957.463mil|Location2.X=4963.797mil|Location1.Y=5132.66mil|Location2.Y=5138.993mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\RickWang\OneDrive - Latium Tech\Documents\GitHub\pcl_sensor_PCB\PCL_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4957.463mil|Location2.X=4963.797mil|Location1.Y=5132.66mil|Location2.Y=5138.993mil|Absolute=True">Clearance Constraint: (Collision &lt; 0.203mm) Between Area Fill (38.7mm,20.3mm) (53.4mm,46.2mm) on Top Layer And Track (41.2mm,27.65mm)(49.3mm,27.65mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\RickWang\OneDrive - Latium Tech\Documents\GitHub\pcl_sensor_PCB\PCL_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4957.463mil|Location2.X=4963.797mil|Location1.Y=5193.684mil|Location2.Y=5200.017mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\RickWang\OneDrive - Latium Tech\Documents\GitHub\pcl_sensor_PCB\PCL_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4957.463mil|Location2.X=4963.797mil|Location1.Y=5193.684mil|Location2.Y=5200.017mil|Absolute=True">Clearance Constraint: (Collision &lt; 0.203mm) Between Area Fill (38.7mm,20.3mm) (53.4mm,46.2mm) on Top Layer And Track (41.2mm,29.2mm)(49.3mm,29.2mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\RickWang\OneDrive - Latium Tech\Documents\GitHub\pcl_sensor_PCB\PCL_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4957.463mil|Location2.X=4963.797mil|Location1.Y=5254.707mil|Location2.Y=5261.041mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\RickWang\OneDrive - Latium Tech\Documents\GitHub\pcl_sensor_PCB\PCL_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4957.463mil|Location2.X=4963.797mil|Location1.Y=5254.707mil|Location2.Y=5261.041mil|Absolute=True">Clearance Constraint: (Collision &lt; 0.203mm) Between Area Fill (38.7mm,20.3mm) (53.4mm,46.2mm) on Top Layer And Track (41.2mm,30.75mm)(49.3mm,30.75mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\RickWang\OneDrive - Latium Tech\Documents\GitHub\pcl_sensor_PCB\PCL_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4957.463mil|Location2.X=4963.797mil|Location1.Y=5315.731mil|Location2.Y=5322.064mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\RickWang\OneDrive - Latium Tech\Documents\GitHub\pcl_sensor_PCB\PCL_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4957.463mil|Location2.X=4963.797mil|Location1.Y=5315.731mil|Location2.Y=5322.064mil|Absolute=True">Clearance Constraint: (Collision &lt; 0.203mm) Between Area Fill (38.7mm,20.3mm) (53.4mm,46.2mm) on Top Layer And Track (41.2mm,32.3mm)(49.3mm,32.3mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\RickWang\OneDrive - Latium Tech\Documents\GitHub\pcl_sensor_PCB\PCL_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4957.463mil|Location2.X=4963.797mil|Location1.Y=5376.755mil|Location2.Y=5383.088mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\RickWang\OneDrive - Latium Tech\Documents\GitHub\pcl_sensor_PCB\PCL_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4957.463mil|Location2.X=4963.797mil|Location1.Y=5376.755mil|Location2.Y=5383.088mil|Absolute=True">Clearance Constraint: (Collision &lt; 0.203mm) Between Area Fill (38.7mm,20.3mm) (53.4mm,46.2mm) on Top Layer And Track (41.2mm,33.85mm)(49.3mm,33.85mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\RickWang\OneDrive - Latium Tech\Documents\GitHub\pcl_sensor_PCB\PCL_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4957.463mil|Location2.X=4963.797mil|Location1.Y=5437.778mil|Location2.Y=5444.111mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\RickWang\OneDrive - Latium Tech\Documents\GitHub\pcl_sensor_PCB\PCL_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4957.463mil|Location2.X=4963.797mil|Location1.Y=5437.778mil|Location2.Y=5444.111mil|Absolute=True">Clearance Constraint: (Collision &lt; 0.203mm) Between Area Fill (38.7mm,20.3mm) (53.4mm,46.2mm) on Top Layer And Track (41.2mm,35.4mm)(49.3mm,35.4mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\RickWang\OneDrive - Latium Tech\Documents\GitHub\pcl_sensor_PCB\PCL_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4957.463mil|Location2.X=4963.797mil|Location1.Y=5498.802mil|Location2.Y=5505.135mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\RickWang\OneDrive - Latium Tech\Documents\GitHub\pcl_sensor_PCB\PCL_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4957.463mil|Location2.X=4963.797mil|Location1.Y=5498.802mil|Location2.Y=5505.135mil|Absolute=True">Clearance Constraint: (Collision &lt; 0.203mm) Between Area Fill (38.7mm,20.3mm) (53.4mm,46.2mm) on Top Layer And Track (41.2mm,36.95mm)(49.3mm,36.95mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\RickWang\OneDrive - Latium Tech\Documents\GitHub\pcl_sensor_PCB\PCL_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4957.463mil|Location2.X=4963.797mil|Location1.Y=5559.825mil|Location2.Y=5566.158mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\RickWang\OneDrive - Latium Tech\Documents\GitHub\pcl_sensor_PCB\PCL_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4957.463mil|Location2.X=4963.797mil|Location1.Y=5559.825mil|Location2.Y=5566.158mil|Absolute=True">Clearance Constraint: (Collision &lt; 0.203mm) Between Area Fill (38.7mm,20.3mm) (53.4mm,46.2mm) on Top Layer And Track (41.2mm,38.5mm)(49.3mm,38.5mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\RickWang\OneDrive - Latium Tech\Documents\GitHub\pcl_sensor_PCB\PCL_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4961.4mil|Location2.X=4967.734mil|Location1.Y=5614.944mil|Location2.Y=5621.277mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\RickWang\OneDrive - Latium Tech\Documents\GitHub\pcl_sensor_PCB\PCL_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4961.4mil|Location2.X=4967.734mil|Location1.Y=5614.944mil|Location2.Y=5621.277mil|Absolute=True">Clearance Constraint: (Collision &lt; 0.203mm) Between Area Fill (38.7mm,20.3mm) (53.4mm,46.2mm) on Top Layer And Track (41.3mm,39.9mm)(49.3mm,39.9mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\RickWang\OneDrive - Latium Tech\Documents\GitHub\pcl_sensor_PCB\PCL_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5016.519mil|Location2.X=5022.852mil|Location1.Y=5032.266mil|Location2.Y=5038.6mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\RickWang\OneDrive - Latium Tech\Documents\GitHub\pcl_sensor_PCB\PCL_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5016.519mil|Location2.X=5022.852mil|Location1.Y=5032.266mil|Location2.Y=5038.6mil|Absolute=True">Clearance Constraint: (Collision &lt; 0.203mm) Between Area Fill (38.7mm,20.3mm) (53.4mm,46.2mm) on Top Layer And Track (42.7mm,25.1mm)(42.7mm,26.2mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\RickWang\OneDrive - Latium Tech\Documents\GitHub\pcl_sensor_PCB\PCL_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5016.519mil|Location2.X=5022.852mil|Location1.Y=5032.266mil|Location2.Y=5038.6mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\RickWang\OneDrive - Latium Tech\Documents\GitHub\pcl_sensor_PCB\PCL_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5016.519mil|Location2.X=5022.852mil|Location1.Y=5032.266mil|Location2.Y=5038.6mil|Absolute=True">Clearance Constraint: (Collision &lt; 0.203mm) Between Area Fill (38.7mm,20.3mm) (53.4mm,46.2mm) on Top Layer And Track (42.7mm,25.1mm)(42.8mm,25mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\RickWang\OneDrive - Latium Tech\Documents\GitHub\pcl_sensor_PCB\PCL_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5016.519mil|Location2.X=5022.852mil|Location1.Y=5075.574mil|Location2.Y=5081.907mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\RickWang\OneDrive - Latium Tech\Documents\GitHub\pcl_sensor_PCB\PCL_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5016.519mil|Location2.X=5022.852mil|Location1.Y=5075.574mil|Location2.Y=5081.907mil|Absolute=True">Clearance Constraint: (Collision &lt; 0.203mm) Between Area Fill (38.7mm,20.3mm) (53.4mm,46.2mm) on Top Layer And Track (42.7mm,26.2mm)(49.2mm,26.2mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\RickWang\OneDrive - Latium Tech\Documents\GitHub\pcl_sensor_PCB\PCL_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5272.424mil|Location2.X=5278.757mil|Location1.Y=5075.574mil|Location2.Y=5081.907mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\RickWang\OneDrive - Latium Tech\Documents\GitHub\pcl_sensor_PCB\PCL_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5272.424mil|Location2.X=5278.757mil|Location1.Y=5075.574mil|Location2.Y=5081.907mil|Absolute=True">Clearance Constraint: (Collision &lt; 0.203mm) Between Area Fill (38.7mm,20.3mm) (53.4mm,46.2mm) on Top Layer And Track (49.2mm,26.2mm)(49.3mm,26.1mm) on Top Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\RickWang\OneDrive - Latium Tech\Documents\GitHub\pcl_sensor_PCB\PCL_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4957.463mil|Location2.X=4963.797mil|Location1.Y=5132.66mil|Location2.Y=5138.993mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\RickWang\OneDrive - Latium Tech\Documents\GitHub\pcl_sensor_PCB\PCL_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4957.463mil|Location2.X=4963.797mil|Location1.Y=5132.66mil|Location2.Y=5138.993mil|Absolute=True">Clearance Constraint: (Collision &lt; 0.203mm) Between Area Fill (38.7mm,20.3mm) (53.4mm,46.2mm) on Top Layer And Via (41.2mm,27.65mm) from Top Layer to Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\RickWang\OneDrive - Latium Tech\Documents\GitHub\pcl_sensor_PCB\PCL_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4957.463mil|Location2.X=4963.797mil|Location1.Y=5193.684mil|Location2.Y=5200.017mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\RickWang\OneDrive - Latium Tech\Documents\GitHub\pcl_sensor_PCB\PCL_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4957.463mil|Location2.X=4963.797mil|Location1.Y=5193.684mil|Location2.Y=5200.017mil|Absolute=True">Clearance Constraint: (Collision &lt; 0.203mm) Between Area Fill (38.7mm,20.3mm) (53.4mm,46.2mm) on Top Layer And Via (41.2mm,29.2mm) from Top Layer to Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\RickWang\OneDrive - Latium Tech\Documents\GitHub\pcl_sensor_PCB\PCL_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4957.463mil|Location2.X=4963.797mil|Location1.Y=5254.707mil|Location2.Y=5261.041mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\RickWang\OneDrive - Latium Tech\Documents\GitHub\pcl_sensor_PCB\PCL_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4957.463mil|Location2.X=4963.797mil|Location1.Y=5254.707mil|Location2.Y=5261.041mil|Absolute=True">Clearance Constraint: (Collision &lt; 0.203mm) Between Area Fill (38.7mm,20.3mm) (53.4mm,46.2mm) on Top Layer And Via (41.2mm,30.75mm) from Top Layer to Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\RickWang\OneDrive - Latium Tech\Documents\GitHub\pcl_sensor_PCB\PCL_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4957.463mil|Location2.X=4963.797mil|Location1.Y=5315.731mil|Location2.Y=5322.064mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\RickWang\OneDrive - Latium Tech\Documents\GitHub\pcl_sensor_PCB\PCL_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4957.463mil|Location2.X=4963.797mil|Location1.Y=5315.731mil|Location2.Y=5322.064mil|Absolute=True">Clearance Constraint: (Collision &lt; 0.203mm) Between Area Fill (38.7mm,20.3mm) (53.4mm,46.2mm) on Top Layer And Via (41.2mm,32.3mm) from Top Layer to Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\RickWang\OneDrive - Latium Tech\Documents\GitHub\pcl_sensor_PCB\PCL_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4957.463mil|Location2.X=4963.797mil|Location1.Y=5376.755mil|Location2.Y=5383.088mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\RickWang\OneDrive - Latium Tech\Documents\GitHub\pcl_sensor_PCB\PCL_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4957.463mil|Location2.X=4963.797mil|Location1.Y=5376.755mil|Location2.Y=5383.088mil|Absolute=True">Clearance Constraint: (Collision &lt; 0.203mm) Between Area Fill (38.7mm,20.3mm) (53.4mm,46.2mm) on Top Layer And Via (41.2mm,33.85mm) from Top Layer to Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\RickWang\OneDrive - Latium Tech\Documents\GitHub\pcl_sensor_PCB\PCL_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4957.463mil|Location2.X=4963.797mil|Location1.Y=5437.778mil|Location2.Y=5444.111mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\RickWang\OneDrive - Latium Tech\Documents\GitHub\pcl_sensor_PCB\PCL_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4957.463mil|Location2.X=4963.797mil|Location1.Y=5437.778mil|Location2.Y=5444.111mil|Absolute=True">Clearance Constraint: (Collision &lt; 0.203mm) Between Area Fill (38.7mm,20.3mm) (53.4mm,46.2mm) on Top Layer And Via (41.2mm,35.4mm) from Top Layer to Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\RickWang\OneDrive - Latium Tech\Documents\GitHub\pcl_sensor_PCB\PCL_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4957.463mil|Location2.X=4963.797mil|Location1.Y=5498.802mil|Location2.Y=5505.135mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\RickWang\OneDrive - Latium Tech\Documents\GitHub\pcl_sensor_PCB\PCL_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4957.463mil|Location2.X=4963.797mil|Location1.Y=5498.802mil|Location2.Y=5505.135mil|Absolute=True">Clearance Constraint: (Collision &lt; 0.203mm) Between Area Fill (38.7mm,20.3mm) (53.4mm,46.2mm) on Top Layer And Via (41.2mm,36.95mm) from Top Layer to Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\RickWang\OneDrive - Latium Tech\Documents\GitHub\pcl_sensor_PCB\PCL_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4957.463mil|Location2.X=4963.797mil|Location1.Y=5559.825mil|Location2.Y=5566.158mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\RickWang\OneDrive - Latium Tech\Documents\GitHub\pcl_sensor_PCB\PCL_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4957.463mil|Location2.X=4963.797mil|Location1.Y=5559.825mil|Location2.Y=5566.158mil|Absolute=True">Clearance Constraint: (Collision &lt; 0.203mm) Between Area Fill (38.7mm,20.3mm) (53.4mm,46.2mm) on Top Layer And Via (41.2mm,38.5mm) from Top Layer to Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\RickWang\OneDrive - Latium Tech\Documents\GitHub\pcl_sensor_PCB\PCL_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4961.4mil|Location2.X=4967.734mil|Location1.Y=5614.944mil|Location2.Y=5621.277mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\RickWang\OneDrive - Latium Tech\Documents\GitHub\pcl_sensor_PCB\PCL_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4961.4mil|Location2.X=4967.734mil|Location1.Y=5614.944mil|Location2.Y=5621.277mil|Absolute=True">Clearance Constraint: (Collision &lt; 0.203mm) Between Area Fill (38.7mm,20.3mm) (53.4mm,46.2mm) on Top Layer And Via (41.3mm,39.9mm) from Top Layer to Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\RickWang\OneDrive - Latium Tech\Documents\GitHub\pcl_sensor_PCB\PCL_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5276.361mil|Location2.X=5282.694mil|Location1.Y=5071.636mil|Location2.Y=5077.97mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\RickWang\OneDrive - Latium Tech\Documents\GitHub\pcl_sensor_PCB\PCL_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5276.361mil|Location2.X=5282.694mil|Location1.Y=5071.636mil|Location2.Y=5077.97mil|Absolute=True">Clearance Constraint: (Collision &lt; 0.203mm) Between Area Fill (38.7mm,20.3mm) (53.4mm,46.2mm) on Top Layer And Via (49.3mm,26.1mm) from Top Layer to Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\RickWang\OneDrive - Latium Tech\Documents\GitHub\pcl_sensor_PCB\PCL_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5276.361mil|Location2.X=5282.694mil|Location1.Y=5132.66mil|Location2.Y=5138.993mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\RickWang\OneDrive - Latium Tech\Documents\GitHub\pcl_sensor_PCB\PCL_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5276.361mil|Location2.X=5282.694mil|Location1.Y=5132.66mil|Location2.Y=5138.993mil|Absolute=True">Clearance Constraint: (Collision &lt; 0.203mm) Between Area Fill (38.7mm,20.3mm) (53.4mm,46.2mm) on Top Layer And Via (49.3mm,27.65mm) from Top Layer to Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\RickWang\OneDrive - Latium Tech\Documents\GitHub\pcl_sensor_PCB\PCL_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5276.361mil|Location2.X=5282.694mil|Location1.Y=5193.684mil|Location2.Y=5200.017mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\RickWang\OneDrive - Latium Tech\Documents\GitHub\pcl_sensor_PCB\PCL_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5276.361mil|Location2.X=5282.694mil|Location1.Y=5193.684mil|Location2.Y=5200.017mil|Absolute=True">Clearance Constraint: (Collision &lt; 0.203mm) Between Area Fill (38.7mm,20.3mm) (53.4mm,46.2mm) on Top Layer And Via (49.3mm,29.2mm) from Top Layer to Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\RickWang\OneDrive - Latium Tech\Documents\GitHub\pcl_sensor_PCB\PCL_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5276.361mil|Location2.X=5282.694mil|Location1.Y=5254.707mil|Location2.Y=5261.041mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\RickWang\OneDrive - Latium Tech\Documents\GitHub\pcl_sensor_PCB\PCL_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5276.361mil|Location2.X=5282.694mil|Location1.Y=5254.707mil|Location2.Y=5261.041mil|Absolute=True">Clearance Constraint: (Collision &lt; 0.203mm) Between Area Fill (38.7mm,20.3mm) (53.4mm,46.2mm) on Top Layer And Via (49.3mm,30.75mm) from Top Layer to Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\RickWang\OneDrive - Latium Tech\Documents\GitHub\pcl_sensor_PCB\PCL_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5276.361mil|Location2.X=5282.694mil|Location1.Y=5315.731mil|Location2.Y=5322.064mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\RickWang\OneDrive - Latium Tech\Documents\GitHub\pcl_sensor_PCB\PCL_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5276.361mil|Location2.X=5282.694mil|Location1.Y=5315.731mil|Location2.Y=5322.064mil|Absolute=True">Clearance Constraint: (Collision &lt; 0.203mm) Between Area Fill (38.7mm,20.3mm) (53.4mm,46.2mm) on Top Layer And Via (49.3mm,32.3mm) from Top Layer to Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\RickWang\OneDrive - Latium Tech\Documents\GitHub\pcl_sensor_PCB\PCL_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5276.361mil|Location2.X=5282.694mil|Location1.Y=5376.755mil|Location2.Y=5383.088mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\RickWang\OneDrive - Latium Tech\Documents\GitHub\pcl_sensor_PCB\PCL_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5276.361mil|Location2.X=5282.694mil|Location1.Y=5376.755mil|Location2.Y=5383.088mil|Absolute=True">Clearance Constraint: (Collision &lt; 0.203mm) Between Area Fill (38.7mm,20.3mm) (53.4mm,46.2mm) on Top Layer And Via (49.3mm,33.85mm) from Top Layer to Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\RickWang\OneDrive - Latium Tech\Documents\GitHub\pcl_sensor_PCB\PCL_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5276.361mil|Location2.X=5282.694mil|Location1.Y=5437.778mil|Location2.Y=5444.111mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\RickWang\OneDrive - Latium Tech\Documents\GitHub\pcl_sensor_PCB\PCL_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5276.361mil|Location2.X=5282.694mil|Location1.Y=5437.778mil|Location2.Y=5444.111mil|Absolute=True">Clearance Constraint: (Collision &lt; 0.203mm) Between Area Fill (38.7mm,20.3mm) (53.4mm,46.2mm) on Top Layer And Via (49.3mm,35.4mm) from Top Layer to Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\RickWang\OneDrive - Latium Tech\Documents\GitHub\pcl_sensor_PCB\PCL_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5276.361mil|Location2.X=5282.694mil|Location1.Y=5498.802mil|Location2.Y=5505.135mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\RickWang\OneDrive - Latium Tech\Documents\GitHub\pcl_sensor_PCB\PCL_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5276.361mil|Location2.X=5282.694mil|Location1.Y=5498.802mil|Location2.Y=5505.135mil|Absolute=True">Clearance Constraint: (Collision &lt; 0.203mm) Between Area Fill (38.7mm,20.3mm) (53.4mm,46.2mm) on Top Layer And Via (49.3mm,36.95mm) from Top Layer to Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\RickWang\OneDrive - Latium Tech\Documents\GitHub\pcl_sensor_PCB\PCL_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5276.361mil|Location2.X=5282.694mil|Location1.Y=5559.825mil|Location2.Y=5566.158mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\RickWang\OneDrive - Latium Tech\Documents\GitHub\pcl_sensor_PCB\PCL_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5276.361mil|Location2.X=5282.694mil|Location1.Y=5559.825mil|Location2.Y=5566.158mil|Absolute=True">Clearance Constraint: (Collision &lt; 0.203mm) Between Area Fill (38.7mm,20.3mm) (53.4mm,46.2mm) on Top Layer And Via (49.3mm,38.5mm) from Top Layer to Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\RickWang\OneDrive - Latium Tech\Documents\GitHub\pcl_sensor_PCB\PCL_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5015.456mil|Location2.X=5021.789mil|Location1.Y=5028.329mil|Location2.Y=5034.663mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\RickWang\OneDrive - Latium Tech\Documents\GitHub\pcl_sensor_PCB\PCL_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5015.456mil|Location2.X=5021.789mil|Location1.Y=5028.329mil|Location2.Y=5034.663mil|Absolute=True">Clearance Constraint: (Collision &lt; 0.203mm) Between Area Fill (38.8mm,20.3mm) (53.5mm,46.2mm) on Bottom Layer And Pad E1-1(42.8mm,25mm) on Multi-Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\RickWang\OneDrive - Latium Tech\Documents\GitHub\pcl_sensor_PCB\PCL_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4957.463mil|Location2.X=4963.797mil|Location1.Y=5132.66mil|Location2.Y=5138.993mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\RickWang\OneDrive - Latium Tech\Documents\GitHub\pcl_sensor_PCB\PCL_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4957.463mil|Location2.X=4963.797mil|Location1.Y=5132.66mil|Location2.Y=5138.993mil|Absolute=True">Clearance Constraint: (Collision &lt; 0.203mm) Between Area Fill (38.8mm,20.3mm) (53.5mm,46.2mm) on Bottom Layer And Track (41.2mm,27.65mm)(41.95mm,26.9mm) on Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\RickWang\OneDrive - Latium Tech\Documents\GitHub\pcl_sensor_PCB\PCL_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4957.463mil|Location2.X=4963.797mil|Location1.Y=5193.684mil|Location2.Y=5200.017mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\RickWang\OneDrive - Latium Tech\Documents\GitHub\pcl_sensor_PCB\PCL_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4957.463mil|Location2.X=4963.797mil|Location1.Y=5193.684mil|Location2.Y=5200.017mil|Absolute=True">Clearance Constraint: (Collision &lt; 0.203mm) Between Area Fill (38.8mm,20.3mm) (53.5mm,46.2mm) on Bottom Layer And Track (41.2mm,29.2mm)(41.95mm,28.45mm) on Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\RickWang\OneDrive - Latium Tech\Documents\GitHub\pcl_sensor_PCB\PCL_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4957.463mil|Location2.X=4963.797mil|Location1.Y=5254.707mil|Location2.Y=5261.041mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\RickWang\OneDrive - Latium Tech\Documents\GitHub\pcl_sensor_PCB\PCL_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4957.463mil|Location2.X=4963.797mil|Location1.Y=5254.707mil|Location2.Y=5261.041mil|Absolute=True">Clearance Constraint: (Collision &lt; 0.203mm) Between Area Fill (38.8mm,20.3mm) (53.5mm,46.2mm) on Bottom Layer And Track (41.2mm,30.75mm)(42mm,29.95mm) on Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\RickWang\OneDrive - Latium Tech\Documents\GitHub\pcl_sensor_PCB\PCL_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4957.463mil|Location2.X=4963.797mil|Location1.Y=5315.731mil|Location2.Y=5322.064mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\RickWang\OneDrive - Latium Tech\Documents\GitHub\pcl_sensor_PCB\PCL_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4957.463mil|Location2.X=4963.797mil|Location1.Y=5315.731mil|Location2.Y=5322.064mil|Absolute=True">Clearance Constraint: (Collision &lt; 0.203mm) Between Area Fill (38.8mm,20.3mm) (53.5mm,46.2mm) on Bottom Layer And Track (41.2mm,32.3mm)(42mm,31.5mm) on Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\RickWang\OneDrive - Latium Tech\Documents\GitHub\pcl_sensor_PCB\PCL_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4957.463mil|Location2.X=4963.797mil|Location1.Y=5376.755mil|Location2.Y=5383.088mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\RickWang\OneDrive - Latium Tech\Documents\GitHub\pcl_sensor_PCB\PCL_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4957.463mil|Location2.X=4963.797mil|Location1.Y=5376.755mil|Location2.Y=5383.088mil|Absolute=True">Clearance Constraint: (Collision &lt; 0.203mm) Between Area Fill (38.8mm,20.3mm) (53.5mm,46.2mm) on Bottom Layer And Track (41.2mm,33.85mm)(42mm,33.05mm) on Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\RickWang\OneDrive - Latium Tech\Documents\GitHub\pcl_sensor_PCB\PCL_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4957.463mil|Location2.X=4963.797mil|Location1.Y=5437.778mil|Location2.Y=5444.111mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\RickWang\OneDrive - Latium Tech\Documents\GitHub\pcl_sensor_PCB\PCL_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4957.463mil|Location2.X=4963.797mil|Location1.Y=5437.778mil|Location2.Y=5444.111mil|Absolute=True">Clearance Constraint: (Collision &lt; 0.203mm) Between Area Fill (38.8mm,20.3mm) (53.5mm,46.2mm) on Bottom Layer And Track (41.2mm,35.4mm)(42mm,34.6mm) on Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\RickWang\OneDrive - Latium Tech\Documents\GitHub\pcl_sensor_PCB\PCL_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4957.463mil|Location2.X=4963.797mil|Location1.Y=5497.818mil|Location2.Y=5504.151mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\RickWang\OneDrive - Latium Tech\Documents\GitHub\pcl_sensor_PCB\PCL_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4957.463mil|Location2.X=4963.797mil|Location1.Y=5497.818mil|Location2.Y=5504.151mil|Absolute=True">Clearance Constraint: (Collision &lt; 0.203mm) Between Area Fill (38.8mm,20.3mm) (53.5mm,46.2mm) on Bottom Layer And Track (41.2mm,36.925mm)(42.125mm,36mm) on Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\RickWang\OneDrive - Latium Tech\Documents\GitHub\pcl_sensor_PCB\PCL_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4957.463mil|Location2.X=4963.797mil|Location1.Y=5559.825mil|Location2.Y=5566.158mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\RickWang\OneDrive - Latium Tech\Documents\GitHub\pcl_sensor_PCB\PCL_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4957.463mil|Location2.X=4963.797mil|Location1.Y=5559.825mil|Location2.Y=5566.158mil|Absolute=True">Clearance Constraint: (Collision &lt; 0.203mm) Between Area Fill (38.8mm,20.3mm) (53.5mm,46.2mm) on Bottom Layer And Track (41.2mm,38.5mm)(42mm,37.7mm) on Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\RickWang\OneDrive - Latium Tech\Documents\GitHub\pcl_sensor_PCB\PCL_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4961.4mil|Location2.X=4967.734mil|Location1.Y=5614.944mil|Location2.Y=5621.277mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\RickWang\OneDrive - Latium Tech\Documents\GitHub\pcl_sensor_PCB\PCL_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4961.4mil|Location2.X=4967.734mil|Location1.Y=5614.944mil|Location2.Y=5621.277mil|Absolute=True">Clearance Constraint: (Collision &lt; 0.203mm) Between Area Fill (38.8mm,20.3mm) (53.5mm,46.2mm) on Bottom Layer And Track (41.3mm,39.9mm)(42.2mm,39mm) on Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\RickWang\OneDrive - Latium Tech\Documents\GitHub\pcl_sensor_PCB\PCL_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4986.991mil|Location2.X=4993.324mil|Location1.Y=5103.133mil|Location2.Y=5109.466mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\RickWang\OneDrive - Latium Tech\Documents\GitHub\pcl_sensor_PCB\PCL_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4986.991mil|Location2.X=4993.324mil|Location1.Y=5103.133mil|Location2.Y=5109.466mil|Absolute=True">Clearance Constraint: (Collision &lt; 0.203mm) Between Area Fill (38.8mm,20.3mm) (53.5mm,46.2mm) on Bottom Layer And Track (41.95mm,26.9mm)(48.5mm,26.9mm) on Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\RickWang\OneDrive - Latium Tech\Documents\GitHub\pcl_sensor_PCB\PCL_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4986.991mil|Location2.X=4993.324mil|Location1.Y=5164.156mil|Location2.Y=5170.489mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\RickWang\OneDrive - Latium Tech\Documents\GitHub\pcl_sensor_PCB\PCL_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4986.991mil|Location2.X=4993.324mil|Location1.Y=5164.156mil|Location2.Y=5170.489mil|Absolute=True">Clearance Constraint: (Collision &lt; 0.203mm) Between Area Fill (38.8mm,20.3mm) (53.5mm,46.2mm) on Bottom Layer And Track (41.95mm,28.45mm)(48.5mm,28.45mm) on Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\RickWang\OneDrive - Latium Tech\Documents\GitHub\pcl_sensor_PCB\PCL_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4993.881mil|Location2.X=5000.214mil|Location1.Y=5461.4mil|Location2.Y=5467.734mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\RickWang\OneDrive - Latium Tech\Documents\GitHub\pcl_sensor_PCB\PCL_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4993.881mil|Location2.X=5000.214mil|Location1.Y=5461.4mil|Location2.Y=5467.734mil|Absolute=True">Clearance Constraint: (Collision &lt; 0.203mm) Between Area Fill (38.8mm,20.3mm) (53.5mm,46.2mm) on Bottom Layer And Track (42.125mm,36mm)(48.7mm,36mm) on Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\RickWang\OneDrive - Latium Tech\Documents\GitHub\pcl_sensor_PCB\PCL_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4996.833mil|Location2.X=5003.167mil|Location1.Y=5579.511mil|Location2.Y=5585.844mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\RickWang\OneDrive - Latium Tech\Documents\GitHub\pcl_sensor_PCB\PCL_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4996.833mil|Location2.X=5003.167mil|Location1.Y=5579.511mil|Location2.Y=5585.844mil|Absolute=True">Clearance Constraint: (Collision &lt; 0.203mm) Between Area Fill (38.8mm,20.3mm) (53.5mm,46.2mm) on Bottom Layer And Track (42.2mm,39mm)(48.8mm,39mm) on Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\RickWang\OneDrive - Latium Tech\Documents\GitHub\pcl_sensor_PCB\PCL_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4988.959mil|Location2.X=4995.292mil|Location1.Y=5223.211mil|Location2.Y=5229.544mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\RickWang\OneDrive - Latium Tech\Documents\GitHub\pcl_sensor_PCB\PCL_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4988.959mil|Location2.X=4995.292mil|Location1.Y=5223.211mil|Location2.Y=5229.544mil|Absolute=True">Clearance Constraint: (Collision &lt; 0.203mm) Between Area Fill (38.8mm,20.3mm) (53.5mm,46.2mm) on Bottom Layer And Track (42mm,29.95mm)(48.55mm,29.95mm) on Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\RickWang\OneDrive - Latium Tech\Documents\GitHub\pcl_sensor_PCB\PCL_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4988.959mil|Location2.X=4995.292mil|Location1.Y=5284.235mil|Location2.Y=5290.568mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\RickWang\OneDrive - Latium Tech\Documents\GitHub\pcl_sensor_PCB\PCL_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4988.959mil|Location2.X=4995.292mil|Location1.Y=5284.235mil|Location2.Y=5290.568mil|Absolute=True">Clearance Constraint: (Collision &lt; 0.203mm) Between Area Fill (38.8mm,20.3mm) (53.5mm,46.2mm) on Bottom Layer And Track (42mm,31.5mm)(48.55mm,31.5mm) on Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\RickWang\OneDrive - Latium Tech\Documents\GitHub\pcl_sensor_PCB\PCL_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4988.959mil|Location2.X=4995.292mil|Location1.Y=5345.258mil|Location2.Y=5351.592mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\RickWang\OneDrive - Latium Tech\Documents\GitHub\pcl_sensor_PCB\PCL_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4988.959mil|Location2.X=4995.292mil|Location1.Y=5345.258mil|Location2.Y=5351.592mil|Absolute=True">Clearance Constraint: (Collision &lt; 0.203mm) Between Area Fill (38.8mm,20.3mm) (53.5mm,46.2mm) on Bottom Layer And Track (42mm,33.05mm)(48.55mm,33.05mm) on Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\RickWang\OneDrive - Latium Tech\Documents\GitHub\pcl_sensor_PCB\PCL_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4988.959mil|Location2.X=4995.292mil|Location1.Y=5406.282mil|Location2.Y=5412.615mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\RickWang\OneDrive - Latium Tech\Documents\GitHub\pcl_sensor_PCB\PCL_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4988.959mil|Location2.X=4995.292mil|Location1.Y=5406.282mil|Location2.Y=5412.615mil|Absolute=True">Clearance Constraint: (Collision &lt; 0.203mm) Between Area Fill (38.8mm,20.3mm) (53.5mm,46.2mm) on Bottom Layer And Track (42mm,34.6mm)(48.55mm,34.6mm) on Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\RickWang\OneDrive - Latium Tech\Documents\GitHub\pcl_sensor_PCB\PCL_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4988.959mil|Location2.X=4995.292mil|Location1.Y=5528.329mil|Location2.Y=5534.663mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\RickWang\OneDrive - Latium Tech\Documents\GitHub\pcl_sensor_PCB\PCL_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4988.959mil|Location2.X=4995.292mil|Location1.Y=5528.329mil|Location2.Y=5534.663mil|Absolute=True">Clearance Constraint: (Collision &lt; 0.203mm) Between Area Fill (38.8mm,20.3mm) (53.5mm,46.2mm) on Bottom Layer And Track (42mm,37.7mm)(48.5mm,37.7mm) on Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\RickWang\OneDrive - Latium Tech\Documents\GitHub\pcl_sensor_PCB\PCL_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5246.833mil|Location2.X=5253.167mil|Location1.Y=5223.211mil|Location2.Y=5229.544mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\RickWang\OneDrive - Latium Tech\Documents\GitHub\pcl_sensor_PCB\PCL_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5246.833mil|Location2.X=5253.167mil|Location1.Y=5223.211mil|Location2.Y=5229.544mil|Absolute=True">Clearance Constraint: (Collision &lt; 0.203mm) Between Area Fill (38.8mm,20.3mm) (53.5mm,46.2mm) on Bottom Layer And Track (48.55mm,29.95mm)(49.3mm,29.2mm) on Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\RickWang\OneDrive - Latium Tech\Documents\GitHub\pcl_sensor_PCB\PCL_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5246.833mil|Location2.X=5253.167mil|Location1.Y=5284.235mil|Location2.Y=5290.568mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\RickWang\OneDrive - Latium Tech\Documents\GitHub\pcl_sensor_PCB\PCL_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5246.833mil|Location2.X=5253.167mil|Location1.Y=5284.235mil|Location2.Y=5290.568mil|Absolute=True">Clearance Constraint: (Collision &lt; 0.203mm) Between Area Fill (38.8mm,20.3mm) (53.5mm,46.2mm) on Bottom Layer And Track (48.55mm,31.5mm)(49.3mm,30.75mm) on Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\RickWang\OneDrive - Latium Tech\Documents\GitHub\pcl_sensor_PCB\PCL_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5246.833mil|Location2.X=5253.167mil|Location1.Y=5345.258mil|Location2.Y=5351.592mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\RickWang\OneDrive - Latium Tech\Documents\GitHub\pcl_sensor_PCB\PCL_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5246.833mil|Location2.X=5253.167mil|Location1.Y=5345.258mil|Location2.Y=5351.592mil|Absolute=True">Clearance Constraint: (Collision &lt; 0.203mm) Between Area Fill (38.8mm,20.3mm) (53.5mm,46.2mm) on Bottom Layer And Track (48.55mm,33.05mm)(49.3mm,32.3mm) on Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\RickWang\OneDrive - Latium Tech\Documents\GitHub\pcl_sensor_PCB\PCL_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5246.833mil|Location2.X=5253.167mil|Location1.Y=5406.282mil|Location2.Y=5412.615mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\RickWang\OneDrive - Latium Tech\Documents\GitHub\pcl_sensor_PCB\PCL_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5246.833mil|Location2.X=5253.167mil|Location1.Y=5406.282mil|Location2.Y=5412.615mil|Absolute=True">Clearance Constraint: (Collision &lt; 0.203mm) Between Area Fill (38.8mm,20.3mm) (53.5mm,46.2mm) on Bottom Layer And Track (48.55mm,34.6mm)(49.3mm,33.85mm) on Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\RickWang\OneDrive - Latium Tech\Documents\GitHub\pcl_sensor_PCB\PCL_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5244.865mil|Location2.X=5251.198mil|Location1.Y=5103.133mil|Location2.Y=5109.466mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\RickWang\OneDrive - Latium Tech\Documents\GitHub\pcl_sensor_PCB\PCL_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5244.865mil|Location2.X=5251.198mil|Location1.Y=5103.133mil|Location2.Y=5109.466mil|Absolute=True">Clearance Constraint: (Collision &lt; 0.203mm) Between Area Fill (38.8mm,20.3mm) (53.5mm,46.2mm) on Bottom Layer And Track (48.5mm,26.9mm)(49.3mm,26.1mm) on Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\RickWang\OneDrive - Latium Tech\Documents\GitHub\pcl_sensor_PCB\PCL_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5244.865mil|Location2.X=5251.198mil|Location1.Y=5164.156mil|Location2.Y=5170.489mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\RickWang\OneDrive - Latium Tech\Documents\GitHub\pcl_sensor_PCB\PCL_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5244.865mil|Location2.X=5251.198mil|Location1.Y=5164.156mil|Location2.Y=5170.489mil|Absolute=True">Clearance Constraint: (Collision &lt; 0.203mm) Between Area Fill (38.8mm,20.3mm) (53.5mm,46.2mm) on Bottom Layer And Track (48.5mm,28.45mm)(49.3mm,27.65mm) on Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\RickWang\OneDrive - Latium Tech\Documents\GitHub\pcl_sensor_PCB\PCL_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5244.865mil|Location2.X=5251.198mil|Location1.Y=5528.329mil|Location2.Y=5534.663mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\RickWang\OneDrive - Latium Tech\Documents\GitHub\pcl_sensor_PCB\PCL_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5244.865mil|Location2.X=5251.198mil|Location1.Y=5528.329mil|Location2.Y=5534.663mil|Absolute=True">Clearance Constraint: (Collision &lt; 0.203mm) Between Area Fill (38.8mm,20.3mm) (53.5mm,46.2mm) on Bottom Layer And Track (48.5mm,37.7mm)(49.2mm,37mm) on Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\RickWang\OneDrive - Latium Tech\Documents\GitHub\pcl_sensor_PCB\PCL_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5252.739mil|Location2.X=5259.072mil|Location1.Y=5461.4mil|Location2.Y=5467.734mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\RickWang\OneDrive - Latium Tech\Documents\GitHub\pcl_sensor_PCB\PCL_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5252.739mil|Location2.X=5259.072mil|Location1.Y=5461.4mil|Location2.Y=5467.734mil|Absolute=True">Clearance Constraint: (Collision &lt; 0.203mm) Between Area Fill (38.8mm,20.3mm) (53.5mm,46.2mm) on Bottom Layer And Track (48.7mm,36mm)(49.3mm,35.4mm) on Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\RickWang\OneDrive - Latium Tech\Documents\GitHub\pcl_sensor_PCB\PCL_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5256.676mil|Location2.X=5263.009mil|Location1.Y=5579.511mil|Location2.Y=5585.844mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\RickWang\OneDrive - Latium Tech\Documents\GitHub\pcl_sensor_PCB\PCL_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5256.676mil|Location2.X=5263.009mil|Location1.Y=5579.511mil|Location2.Y=5585.844mil|Absolute=True">Clearance Constraint: (Collision &lt; 0.203mm) Between Area Fill (38.8mm,20.3mm) (53.5mm,46.2mm) on Bottom Layer And Track (48.8mm,39mm)(49.3mm,38.5mm) on Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\RickWang\OneDrive - Latium Tech\Documents\GitHub\pcl_sensor_PCB\PCL_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4957.463mil|Location2.X=4963.797mil|Location1.Y=5132.66mil|Location2.Y=5138.993mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\RickWang\OneDrive - Latium Tech\Documents\GitHub\pcl_sensor_PCB\PCL_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4957.463mil|Location2.X=4963.797mil|Location1.Y=5132.66mil|Location2.Y=5138.993mil|Absolute=True">Clearance Constraint: (Collision &lt; 0.203mm) Between Area Fill (38.8mm,20.3mm) (53.5mm,46.2mm) on Bottom Layer And Via (41.2mm,27.65mm) from Top Layer to Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\RickWang\OneDrive - Latium Tech\Documents\GitHub\pcl_sensor_PCB\PCL_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4957.463mil|Location2.X=4963.797mil|Location1.Y=5193.684mil|Location2.Y=5200.017mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\RickWang\OneDrive - Latium Tech\Documents\GitHub\pcl_sensor_PCB\PCL_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4957.463mil|Location2.X=4963.797mil|Location1.Y=5193.684mil|Location2.Y=5200.017mil|Absolute=True">Clearance Constraint: (Collision &lt; 0.203mm) Between Area Fill (38.8mm,20.3mm) (53.5mm,46.2mm) on Bottom Layer And Via (41.2mm,29.2mm) from Top Layer to Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\RickWang\OneDrive - Latium Tech\Documents\GitHub\pcl_sensor_PCB\PCL_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4957.463mil|Location2.X=4963.797mil|Location1.Y=5254.707mil|Location2.Y=5261.041mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\RickWang\OneDrive - Latium Tech\Documents\GitHub\pcl_sensor_PCB\PCL_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4957.463mil|Location2.X=4963.797mil|Location1.Y=5254.707mil|Location2.Y=5261.041mil|Absolute=True">Clearance Constraint: (Collision &lt; 0.203mm) Between Area Fill (38.8mm,20.3mm) (53.5mm,46.2mm) on Bottom Layer And Via (41.2mm,30.75mm) from Top Layer to Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\RickWang\OneDrive - Latium Tech\Documents\GitHub\pcl_sensor_PCB\PCL_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4957.463mil|Location2.X=4963.797mil|Location1.Y=5315.731mil|Location2.Y=5322.064mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\RickWang\OneDrive - Latium Tech\Documents\GitHub\pcl_sensor_PCB\PCL_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4957.463mil|Location2.X=4963.797mil|Location1.Y=5315.731mil|Location2.Y=5322.064mil|Absolute=True">Clearance Constraint: (Collision &lt; 0.203mm) Between Area Fill (38.8mm,20.3mm) (53.5mm,46.2mm) on Bottom Layer And Via (41.2mm,32.3mm) from Top Layer to Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\RickWang\OneDrive - Latium Tech\Documents\GitHub\pcl_sensor_PCB\PCL_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4957.463mil|Location2.X=4963.797mil|Location1.Y=5376.755mil|Location2.Y=5383.088mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\RickWang\OneDrive - Latium Tech\Documents\GitHub\pcl_sensor_PCB\PCL_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4957.463mil|Location2.X=4963.797mil|Location1.Y=5376.755mil|Location2.Y=5383.088mil|Absolute=True">Clearance Constraint: (Collision &lt; 0.203mm) Between Area Fill (38.8mm,20.3mm) (53.5mm,46.2mm) on Bottom Layer And Via (41.2mm,33.85mm) from Top Layer to Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\RickWang\OneDrive - Latium Tech\Documents\GitHub\pcl_sensor_PCB\PCL_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4957.463mil|Location2.X=4963.797mil|Location1.Y=5437.778mil|Location2.Y=5444.111mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\RickWang\OneDrive - Latium Tech\Documents\GitHub\pcl_sensor_PCB\PCL_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4957.463mil|Location2.X=4963.797mil|Location1.Y=5437.778mil|Location2.Y=5444.111mil|Absolute=True">Clearance Constraint: (Collision &lt; 0.203mm) Between Area Fill (38.8mm,20.3mm) (53.5mm,46.2mm) on Bottom Layer And Via (41.2mm,35.4mm) from Top Layer to Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\RickWang\OneDrive - Latium Tech\Documents\GitHub\pcl_sensor_PCB\PCL_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4957.463mil|Location2.X=4963.797mil|Location1.Y=5498.802mil|Location2.Y=5505.135mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\RickWang\OneDrive - Latium Tech\Documents\GitHub\pcl_sensor_PCB\PCL_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4957.463mil|Location2.X=4963.797mil|Location1.Y=5498.802mil|Location2.Y=5505.135mil|Absolute=True">Clearance Constraint: (Collision &lt; 0.203mm) Between Area Fill (38.8mm,20.3mm) (53.5mm,46.2mm) on Bottom Layer And Via (41.2mm,36.95mm) from Top Layer to Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\RickWang\OneDrive - Latium Tech\Documents\GitHub\pcl_sensor_PCB\PCL_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4957.463mil|Location2.X=4963.797mil|Location1.Y=5559.825mil|Location2.Y=5566.158mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\RickWang\OneDrive - Latium Tech\Documents\GitHub\pcl_sensor_PCB\PCL_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4957.463mil|Location2.X=4963.797mil|Location1.Y=5559.825mil|Location2.Y=5566.158mil|Absolute=True">Clearance Constraint: (Collision &lt; 0.203mm) Between Area Fill (38.8mm,20.3mm) (53.5mm,46.2mm) on Bottom Layer And Via (41.2mm,38.5mm) from Top Layer to Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\RickWang\OneDrive - Latium Tech\Documents\GitHub\pcl_sensor_PCB\PCL_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4961.4mil|Location2.X=4967.734mil|Location1.Y=5614.944mil|Location2.Y=5621.277mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\RickWang\OneDrive - Latium Tech\Documents\GitHub\pcl_sensor_PCB\PCL_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=4961.4mil|Location2.X=4967.734mil|Location1.Y=5614.944mil|Location2.Y=5621.277mil|Absolute=True">Clearance Constraint: (Collision &lt; 0.203mm) Between Area Fill (38.8mm,20.3mm) (53.5mm,46.2mm) on Bottom Layer And Via (41.3mm,39.9mm) from Top Layer to Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\RickWang\OneDrive - Latium Tech\Documents\GitHub\pcl_sensor_PCB\PCL_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5276.361mil|Location2.X=5282.694mil|Location1.Y=5071.636mil|Location2.Y=5077.97mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\RickWang\OneDrive - Latium Tech\Documents\GitHub\pcl_sensor_PCB\PCL_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5276.361mil|Location2.X=5282.694mil|Location1.Y=5071.636mil|Location2.Y=5077.97mil|Absolute=True">Clearance Constraint: (Collision &lt; 0.203mm) Between Area Fill (38.8mm,20.3mm) (53.5mm,46.2mm) on Bottom Layer And Via (49.3mm,26.1mm) from Top Layer to Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\RickWang\OneDrive - Latium Tech\Documents\GitHub\pcl_sensor_PCB\PCL_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5276.361mil|Location2.X=5282.694mil|Location1.Y=5132.66mil|Location2.Y=5138.993mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\RickWang\OneDrive - Latium Tech\Documents\GitHub\pcl_sensor_PCB\PCL_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5276.361mil|Location2.X=5282.694mil|Location1.Y=5132.66mil|Location2.Y=5138.993mil|Absolute=True">Clearance Constraint: (Collision &lt; 0.203mm) Between Area Fill (38.8mm,20.3mm) (53.5mm,46.2mm) on Bottom Layer And Via (49.3mm,27.65mm) from Top Layer to Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\RickWang\OneDrive - Latium Tech\Documents\GitHub\pcl_sensor_PCB\PCL_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5276.361mil|Location2.X=5282.694mil|Location1.Y=5193.684mil|Location2.Y=5200.017mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\RickWang\OneDrive - Latium Tech\Documents\GitHub\pcl_sensor_PCB\PCL_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5276.361mil|Location2.X=5282.694mil|Location1.Y=5193.684mil|Location2.Y=5200.017mil|Absolute=True">Clearance Constraint: (Collision &lt; 0.203mm) Between Area Fill (38.8mm,20.3mm) (53.5mm,46.2mm) on Bottom Layer And Via (49.3mm,29.2mm) from Top Layer to Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\RickWang\OneDrive - Latium Tech\Documents\GitHub\pcl_sensor_PCB\PCL_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5276.361mil|Location2.X=5282.694mil|Location1.Y=5254.707mil|Location2.Y=5261.041mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\RickWang\OneDrive - Latium Tech\Documents\GitHub\pcl_sensor_PCB\PCL_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5276.361mil|Location2.X=5282.694mil|Location1.Y=5254.707mil|Location2.Y=5261.041mil|Absolute=True">Clearance Constraint: (Collision &lt; 0.203mm) Between Area Fill (38.8mm,20.3mm) (53.5mm,46.2mm) on Bottom Layer And Via (49.3mm,30.75mm) from Top Layer to Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\RickWang\OneDrive - Latium Tech\Documents\GitHub\pcl_sensor_PCB\PCL_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5276.361mil|Location2.X=5282.694mil|Location1.Y=5315.731mil|Location2.Y=5322.064mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\RickWang\OneDrive - Latium Tech\Documents\GitHub\pcl_sensor_PCB\PCL_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5276.361mil|Location2.X=5282.694mil|Location1.Y=5315.731mil|Location2.Y=5322.064mil|Absolute=True">Clearance Constraint: (Collision &lt; 0.203mm) Between Area Fill (38.8mm,20.3mm) (53.5mm,46.2mm) on Bottom Layer And Via (49.3mm,32.3mm) from Top Layer to Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\RickWang\OneDrive - Latium Tech\Documents\GitHub\pcl_sensor_PCB\PCL_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5276.361mil|Location2.X=5282.694mil|Location1.Y=5376.755mil|Location2.Y=5383.088mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\RickWang\OneDrive - Latium Tech\Documents\GitHub\pcl_sensor_PCB\PCL_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5276.361mil|Location2.X=5282.694mil|Location1.Y=5376.755mil|Location2.Y=5383.088mil|Absolute=True">Clearance Constraint: (Collision &lt; 0.203mm) Between Area Fill (38.8mm,20.3mm) (53.5mm,46.2mm) on Bottom Layer And Via (49.3mm,33.85mm) from Top Layer to Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\RickWang\OneDrive - Latium Tech\Documents\GitHub\pcl_sensor_PCB\PCL_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5276.361mil|Location2.X=5282.694mil|Location1.Y=5437.778mil|Location2.Y=5444.111mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\RickWang\OneDrive - Latium Tech\Documents\GitHub\pcl_sensor_PCB\PCL_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5276.361mil|Location2.X=5282.694mil|Location1.Y=5437.778mil|Location2.Y=5444.111mil|Absolute=True">Clearance Constraint: (Collision &lt; 0.203mm) Between Area Fill (38.8mm,20.3mm) (53.5mm,46.2mm) on Bottom Layer And Via (49.3mm,35.4mm) from Top Layer to Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_even" onmouseover="className = 'onmouseover_even'" onmouseout="className = 'onmouseout_even'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\RickWang\OneDrive - Latium Tech\Documents\GitHub\pcl_sensor_PCB\PCL_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5276.361mil|Location2.X=5282.694mil|Location1.Y=5498.802mil|Location2.Y=5505.135mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\RickWang\OneDrive - Latium Tech\Documents\GitHub\pcl_sensor_PCB\PCL_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5276.361mil|Location2.X=5282.694mil|Location1.Y=5498.802mil|Location2.Y=5505.135mil|Absolute=True">Clearance Constraint: (Collision &lt; 0.203mm) Between Area Fill (38.8mm,20.3mm) (53.5mm,46.2mm) on Bottom Layer And Via (49.3mm,36.95mm) from Top Layer to Bottom Layer </acronym></a><br></td>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\RickWang\OneDrive - Latium Tech\Documents\GitHub\pcl_sensor_PCB\PCL_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5276.361mil|Location2.X=5282.694mil|Location1.Y=5559.825mil|Location2.Y=5566.158mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\RickWang\OneDrive - Latium Tech\Documents\GitHub\pcl_sensor_PCB\PCL_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5276.361mil|Location2.X=5282.694mil|Location1.Y=5559.825mil|Location2.Y=5566.158mil|Absolute=True">Clearance Constraint: (Collision &lt; 0.203mm) Between Area Fill (38.8mm,20.3mm) (53.5mm,46.2mm) on Bottom Layer And Via (49.3mm,38.5mm) from Top Layer to Bottom Layer </acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br><a name="IDUF5R55QOQ3PYBA2STCVYOAEVROVZPJUDJKW05JHZFJ4D1JWQKXKN"><table>
+<tr>
+<th style="text-align : left" colspan="1" class="rule">Net Antennae (Tolerance=0mm) (All)</th>
+</tr>
+<tr class="onmouseout_odd" onmouseover="className = 'onmouseover_odd'" onmouseout="className = 'onmouseout_odd'">
+<td class="column1"><a href="dxpprocess://PCB:Zoom?document=C:\Users\RickWang\OneDrive - Latium Tech\Documents\GitHub\pcl_sensor_PCB\PCL_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5261.264mil|Location2.X=5306.108mil|Location1.Y=5599.846mil|Location2.Y=5669.457mil|Absolute=True" class="callback"><acronym title="dxpprocess://PCB:Zoom?document=C:\Users\RickWang\OneDrive - Latium Tech\Documents\GitHub\pcl_sensor_PCB\PCL_PCB.PcbDoc;viewname=PCBEditor;Action=AREA_DYNAMICZOOM|Location1.X=5261.264mil|Location2.X=5306.108mil|Location1.Y=5599.846mil|Location2.Y=5669.457mil|Absolute=True">Net Antennae: Track (41.3mm,39.9mm)(49.3mm,39.9mm) on Top Layer </acronym></a><br></td>
+</tr>
+</table></a><hr color="#EEEEEE"><a href="#top" style="font-size: 0.9em">Back to top</a><br><br></body>
+</html>

@@ -75,23 +75,6 @@ GenerateClassCluster=0
 DocumentUniqueId=IQDHLDWG
 
 [Document3]
-DocumentPath=PCB_PROJECT.PcbDoc
-AnnotationEnabled=1
-AnnotateStartValue=1
-AnnotationIndexControlEnabled=0
-AnnotateSuffix=
-AnnotateScope=All
-AnnotateOrder=-1
-DoLibraryUpdate=1
-DoDatabaseUpdate=1
-ClassGenCCAutoEnabled=1
-ClassGenCCAutoRoomEnabled=1
-ClassGenNCAutoScope=None
-DItemRevisionGUID=
-GenerateClassCluster=0
-DocumentUniqueId=VQLSMMOE
-
-[Document4]
 DocumentPath=[1]MCU.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -108,7 +91,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=TIKADFCE
 
-[Document5]
+[Document4]
 DocumentPath=[2]Battery.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -125,7 +108,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=GOMNAPEK
 
-[Document6]
+[Document5]
 DocumentPath=[3]USB.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -142,7 +125,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=MPNXSMXW
 
-[Document7]
+[Document6]
 DocumentPath=[4]Button.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -159,7 +142,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=GFAAYDMJ
 
-[Document8]
+[Document7]
 DocumentPath=[5] Sensors.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -176,7 +159,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=MEVZNRXD
 
-[Document9]
+[Document8]
 DocumentPath=[6]3-axis-accelerometer.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -193,7 +176,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=IESSGSVT
 
-[Document10]
+[Document9]
 DocumentPath=[7]Battery Managment.SchDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -210,7 +193,7 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=FFRJIWJV
 
-[Document11]
+[Document10]
 DocumentPath=PCB_Project.IntLib
 AnnotationEnabled=1
 AnnotateStartValue=1
@@ -227,8 +210,8 @@ DItemRevisionGUID=
 GenerateClassCluster=0
 DocumentUniqueId=
 
-[Document12]
-DocumentPath=..\voltage_sensor_PCB\CAMtastic1.Cam
+[Document11]
+DocumentPath=MasterLib.PcbLib
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -242,10 +225,10 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=XCDKGKTS
 
-[Document13]
-DocumentPath=CAMtastic2.Cam
+[Document12]
+DocumentPath=PCL_PCB.PcbDoc
 AnnotationEnabled=1
 AnnotateStartValue=1
 AnnotationIndexControlEnabled=0
@@ -259,7 +242,7 @@ ClassGenCCAutoRoomEnabled=1
 ClassGenNCAutoScope=None
 DItemRevisionGUID=
 GenerateClassCluster=0
-DocumentUniqueId=
+DocumentUniqueId=VQLSMMOE
 
 [ProjectVariant1]
 UniqueID=C9E8FD60-C759-4CB2-8099-C2133B6497A4
@@ -323,202 +306,206 @@ DocumentPath=Project Outputs for PCB_Project\Design Rule Check - PCB_PROJECT.htm
 DItemRevisionGUID=
 
 [GeneratedDocument2]
-DocumentPath=Project Outputs for PCB_Project\PCB_PROJECT-BoardEdgeRout.TXT
+DocumentPath=Project Outputs for PCB_Project\Design Rule Check - PCL_PCB.html
 DItemRevisionGUID=
 
 [GeneratedDocument3]
-DocumentPath=Project Outputs for PCB_Project\PCB_PROJECT-RoundHoles.TXT
+DocumentPath=Project Outputs for PCB_Project\PCB_PROJECT-BoardEdgeRout.TXT
 DItemRevisionGUID=
 
 [GeneratedDocument4]
-DocumentPath=Project Outputs for PCB_Project\PCB_PROJECT-SlotHoles.TXT
+DocumentPath=Project Outputs for PCB_Project\PCB_PROJECT-RoundHoles.TXT
 DItemRevisionGUID=
 
 [GeneratedDocument5]
-DocumentPath=Project Outputs for PCB_Project\PCB_PROJECT.1
+DocumentPath=Project Outputs for PCB_Project\PCB_PROJECT-SlotHoles.TXT
 DItemRevisionGUID=
 
 [GeneratedDocument6]
-DocumentPath=Project Outputs for PCB_Project\PCB_PROJECT.2
+DocumentPath=Project Outputs for PCB_Project\PCB_PROJECT.1
 DItemRevisionGUID=
 
 [GeneratedDocument7]
-DocumentPath=Project Outputs for PCB_Project\PCB_PROJECT.3
+DocumentPath=Project Outputs for PCB_Project\PCB_PROJECT.2
 DItemRevisionGUID=
 
 [GeneratedDocument8]
-DocumentPath=Project Outputs for PCB_Project\PCB_PROJECT.DRR
+DocumentPath=Project Outputs for PCB_Project\PCB_PROJECT.3
 DItemRevisionGUID=
 
 [GeneratedDocument9]
-DocumentPath=Project Outputs for PCB_Project\PCB_PROJECT.EXTREP
+DocumentPath=Project Outputs for PCB_Project\PCB_PROJECT.DRR
 DItemRevisionGUID=
 
 [GeneratedDocument10]
-DocumentPath=Project Outputs for PCB_Project\PCB_PROJECT.GBL
+DocumentPath=Project Outputs for PCB_Project\PCB_PROJECT.EXTREP
 DItemRevisionGUID=
 
 [GeneratedDocument11]
-DocumentPath=Project Outputs for PCB_Project\PCB_PROJECT.GBO
+DocumentPath=Project Outputs for PCB_Project\PCB_PROJECT.GBL
 DItemRevisionGUID=
 
 [GeneratedDocument12]
-DocumentPath=Project Outputs for PCB_Project\PCB_PROJECT.GBP
+DocumentPath=Project Outputs for PCB_Project\PCB_PROJECT.GBO
 DItemRevisionGUID=
 
 [GeneratedDocument13]
-DocumentPath=Project Outputs for PCB_Project\PCB_PROJECT.GBS
+DocumentPath=Project Outputs for PCB_Project\PCB_PROJECT.GBP
 DItemRevisionGUID=
 
 [GeneratedDocument14]
-DocumentPath=Project Outputs for PCB_Project\PCB_PROJECT.GD1
+DocumentPath=Project Outputs for PCB_Project\PCB_PROJECT.GBS
 DItemRevisionGUID=
 
 [GeneratedDocument15]
-DocumentPath=Project Outputs for PCB_Project\PCB_PROJECT.GG1
+DocumentPath=Project Outputs for PCB_Project\PCB_PROJECT.GD1
 DItemRevisionGUID=
 
 [GeneratedDocument16]
-DocumentPath=Project Outputs for PCB_Project\PCB_PROJECT.GKO
+DocumentPath=Project Outputs for PCB_Project\PCB_PROJECT.GG1
 DItemRevisionGUID=
 
 [GeneratedDocument17]
-DocumentPath=Project Outputs for PCB_Project\PCB_PROJECT.GM1
+DocumentPath=Project Outputs for PCB_Project\PCB_PROJECT.GKO
 DItemRevisionGUID=
 
 [GeneratedDocument18]
-DocumentPath=Project Outputs for PCB_Project\PCB_PROJECT.GM2
+DocumentPath=Project Outputs for PCB_Project\PCB_PROJECT.GM1
 DItemRevisionGUID=
 
 [GeneratedDocument19]
-DocumentPath=Project Outputs for PCB_Project\PCB_PROJECT.GM3
+DocumentPath=Project Outputs for PCB_Project\PCB_PROJECT.GM2
 DItemRevisionGUID=
 
 [GeneratedDocument20]
-DocumentPath=Project Outputs for PCB_Project\PCB_PROJECT.GM4
+DocumentPath=Project Outputs for PCB_Project\PCB_PROJECT.GM3
 DItemRevisionGUID=
 
 [GeneratedDocument21]
-DocumentPath=Project Outputs for PCB_Project\PCB_PROJECT.GM5
+DocumentPath=Project Outputs for PCB_Project\PCB_PROJECT.GM4
 DItemRevisionGUID=
 
 [GeneratedDocument22]
-DocumentPath=Project Outputs for PCB_Project\PCB_PROJECT.GM6
+DocumentPath=Project Outputs for PCB_Project\PCB_PROJECT.GM5
 DItemRevisionGUID=
 
 [GeneratedDocument23]
-DocumentPath=Project Outputs for PCB_Project\PCB_PROJECT.GM7
+DocumentPath=Project Outputs for PCB_Project\PCB_PROJECT.GM6
 DItemRevisionGUID=
 
 [GeneratedDocument24]
-DocumentPath=Project Outputs for PCB_Project\PCB_PROJECT.GM8
+DocumentPath=Project Outputs for PCB_Project\PCB_PROJECT.GM7
 DItemRevisionGUID=
 
 [GeneratedDocument25]
-DocumentPath=Project Outputs for PCB_Project\PCB_PROJECT.GM9
+DocumentPath=Project Outputs for PCB_Project\PCB_PROJECT.GM8
 DItemRevisionGUID=
 
 [GeneratedDocument26]
-DocumentPath=Project Outputs for PCB_Project\PCB_PROJECT.GM10
+DocumentPath=Project Outputs for PCB_Project\PCB_PROJECT.GM9
 DItemRevisionGUID=
 
 [GeneratedDocument27]
-DocumentPath=Project Outputs for PCB_Project\PCB_PROJECT.GM11
+DocumentPath=Project Outputs for PCB_Project\PCB_PROJECT.GM10
 DItemRevisionGUID=
 
 [GeneratedDocument28]
-DocumentPath=Project Outputs for PCB_Project\PCB_PROJECT.GM12
+DocumentPath=Project Outputs for PCB_Project\PCB_PROJECT.GM11
 DItemRevisionGUID=
 
 [GeneratedDocument29]
-DocumentPath=Project Outputs for PCB_Project\PCB_PROJECT.GM13
+DocumentPath=Project Outputs for PCB_Project\PCB_PROJECT.GM12
 DItemRevisionGUID=
 
 [GeneratedDocument30]
-DocumentPath=Project Outputs for PCB_Project\PCB_PROJECT.GM15
+DocumentPath=Project Outputs for PCB_Project\PCB_PROJECT.GM13
 DItemRevisionGUID=
 
 [GeneratedDocument31]
-DocumentPath=Project Outputs for PCB_Project\PCB_PROJECT.GM16
+DocumentPath=Project Outputs for PCB_Project\PCB_PROJECT.GM15
 DItemRevisionGUID=
 
 [GeneratedDocument32]
-DocumentPath=Project Outputs for PCB_Project\PCB_PROJECT.GM17
+DocumentPath=Project Outputs for PCB_Project\PCB_PROJECT.GM16
 DItemRevisionGUID=
 
 [GeneratedDocument33]
-DocumentPath=Project Outputs for PCB_Project\PCB_PROJECT.GM19
+DocumentPath=Project Outputs for PCB_Project\PCB_PROJECT.GM17
 DItemRevisionGUID=
 
 [GeneratedDocument34]
-DocumentPath=Project Outputs for PCB_Project\PCB_PROJECT.GM20
+DocumentPath=Project Outputs for PCB_Project\PCB_PROJECT.GM19
 DItemRevisionGUID=
 
 [GeneratedDocument35]
-DocumentPath=Project Outputs for PCB_Project\PCB_PROJECT.GM21
+DocumentPath=Project Outputs for PCB_Project\PCB_PROJECT.GM20
 DItemRevisionGUID=
 
 [GeneratedDocument36]
-DocumentPath=Project Outputs for PCB_Project\PCB_PROJECT.GM22
+DocumentPath=Project Outputs for PCB_Project\PCB_PROJECT.GM21
 DItemRevisionGUID=
 
 [GeneratedDocument37]
-DocumentPath=Project Outputs for PCB_Project\PCB_PROJECT.GM23
+DocumentPath=Project Outputs for PCB_Project\PCB_PROJECT.GM22
 DItemRevisionGUID=
 
 [GeneratedDocument38]
-DocumentPath=Project Outputs for PCB_Project\PCB_PROJECT.GM24
+DocumentPath=Project Outputs for PCB_Project\PCB_PROJECT.GM23
 DItemRevisionGUID=
 
 [GeneratedDocument39]
-DocumentPath=Project Outputs for PCB_Project\PCB_PROJECT.GM29
+DocumentPath=Project Outputs for PCB_Project\PCB_PROJECT.GM24
 DItemRevisionGUID=
 
 [GeneratedDocument40]
-DocumentPath=Project Outputs for PCB_Project\PCB_PROJECT.GML
+DocumentPath=Project Outputs for PCB_Project\PCB_PROJECT.GM29
 DItemRevisionGUID=
 
 [GeneratedDocument41]
-DocumentPath=Project Outputs for PCB_Project\PCB_PROJECT.GP1
+DocumentPath=Project Outputs for PCB_Project\PCB_PROJECT.GML
 DItemRevisionGUID=
 
 [GeneratedDocument42]
-DocumentPath=Project Outputs for PCB_Project\PCB_PROJECT.GP2
+DocumentPath=Project Outputs for PCB_Project\PCB_PROJECT.GP1
 DItemRevisionGUID=
 
 [GeneratedDocument43]
-DocumentPath=Project Outputs for PCB_Project\PCB_PROJECT.GPB
+DocumentPath=Project Outputs for PCB_Project\PCB_PROJECT.GP2
 DItemRevisionGUID=
 
 [GeneratedDocument44]
-DocumentPath=Project Outputs for PCB_Project\PCB_PROJECT.GPT
+DocumentPath=Project Outputs for PCB_Project\PCB_PROJECT.GPB
 DItemRevisionGUID=
 
 [GeneratedDocument45]
-DocumentPath=Project Outputs for PCB_Project\PCB_PROJECT.GTL
+DocumentPath=Project Outputs for PCB_Project\PCB_PROJECT.GPT
 DItemRevisionGUID=
 
 [GeneratedDocument46]
-DocumentPath=Project Outputs for PCB_Project\PCB_PROJECT.GTO
+DocumentPath=Project Outputs for PCB_Project\PCB_PROJECT.GTL
 DItemRevisionGUID=
 
 [GeneratedDocument47]
-DocumentPath=Project Outputs for PCB_Project\PCB_PROJECT.GTP
+DocumentPath=Project Outputs for PCB_Project\PCB_PROJECT.GTO
 DItemRevisionGUID=
 
 [GeneratedDocument48]
-DocumentPath=Project Outputs for PCB_Project\PCB_PROJECT.GTS
+DocumentPath=Project Outputs for PCB_Project\PCB_PROJECT.GTP
 DItemRevisionGUID=
 
 [GeneratedDocument49]
-DocumentPath=Project Outputs for PCB_Project\PCB_PROJECT.LDP
+DocumentPath=Project Outputs for PCB_Project\PCB_PROJECT.GTS
 DItemRevisionGUID=
 
 [GeneratedDocument50]
-DocumentPath=Project Outputs for PCB_Project\PCB_PROJECT.REP
+DocumentPath=Project Outputs for PCB_Project\PCB_PROJECT.LDP
 DItemRevisionGUID=
 
 [GeneratedDocument51]
+DocumentPath=Project Outputs for PCB_Project\PCB_PROJECT.REP
+DItemRevisionGUID=
+
+[GeneratedDocument52]
 DocumentPath=Project Outputs for PCB_Project\PCB_PROJECT.RUL
 DItemRevisionGUID=
 
@@ -680,7 +667,7 @@ OutputDefault20=0
 [OutputGroup2]
 Name=Simulator Outputs
 Description=
-TargetPrinter=RICOH MP C3504ex [58387912A8F6]
+TargetPrinter=RICOH MP C407
 PrinterOptions=Record=PrinterOptions|Copies=1|Duplex=1|TrueTypeOptions=3|Collate=1|PrintJobKind=1|PrintWhat=1
 
 [OutputGroup3]
@@ -2682,9 +2669,9 @@ UpdateVariants=1
 UpdateToLatestRevision=1
 PartTypes=0
 ComponentLibIdentifierKind0=Library Name And Type
-ComponentLibraryIdentifier0=MasterLib.SchLib
-ComponentDesignItemID0=RES 1M 1% 0.1W [0603]
-ComponentSymbolReference0=RES 1M 1% 0.1W [0603]
+ComponentLibraryIdentifier0=PCB_High_Voltage_Sensor.IntLib
+ComponentDesignItemID0=BMA280
+ComponentSymbolReference0=BMA280
 ComponentUpdate0=1
 ComponentIsDeviceSheet0=0
 FullReplace=1
@@ -2700,32 +2687,38 @@ RemoveParameters=0
 AddModels=1
 RemoveModels=1
 UpdateCurrentModels=1
-ParameterName0=Comment
+ParameterName0=Arrow Part Number
 ParameterUpdate0=1
-ParameterName1=Component Kind
+ParameterName1=Arrow Price/Stock
 ParameterUpdate1=1
-ParameterName2=Datasheet
+ParameterName2=Comment
 ParameterUpdate2=1
-ParameterName3=Description
+ParameterName3=Component Kind
 ParameterUpdate3=1
-ParameterName4=Library Reference
+ParameterName4=ComponentLink1Description
 ParameterUpdate4=1
-ParameterName5=PN
+ParameterName5=ComponentLink1URL
 ParameterUpdate5=1
-ParameterName6=Power
+ParameterName6=Datasheet Link
 ParameterUpdate6=1
-ParameterName7=Supplier 1
+ParameterName7=Description
 ParameterUpdate7=1
-ParameterName8=Supplier Part Number 1
+ParameterName8=Height
 ParameterUpdate8=1
-ParameterName9=Tolerance
+ParameterName9=Library Reference
 ParameterUpdate9=1
-ParameterName10=Value
+ParameterName10=Manufacturer_Name
 ParameterUpdate10=1
+ParameterName11=Manufacturer_Part_Number
+ParameterUpdate11=1
+ParameterName12=Mouser Part Number
+ParameterUpdate12=1
+ParameterName13=Mouser Price/Stock
+ParameterUpdate13=1
 ModelTypeGroup0=PCBLIB
 ModelTypeUpdate0=1
 ModelType0=PCBLIB
-ModelName0=RES 0603
+ModelName0=BMA280
 ModelUpdate0=1
 
 [DatabaseUpdateOptions]
